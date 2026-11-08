@@ -1,0 +1,1045 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meta Ads Portfolio | Magestix Solutions</title>
+<style>
+:root{--bg:#0b0b0d;--ink:#f5f5f6;--mut:#8f8f9a;--red:#e11d2b;--red2:#ff8a80;--line:#25252b;--s:#121216;--card:#121216;color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:radial-gradient(900px 600px at 90% -5%,#e11d2b26,transparent 70%),radial-gradient(800px 600px at -5% 55%,#ffffff0d,transparent 70%),var(--bg);color:var(--ink);font:400 16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;top:0;left:0;height:3px;width:var(--p,0%);background:linear-gradient(90deg,var(--red),var(--red2));z-index:50}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#ffffff0b 1px,transparent 1px),linear-gradient(90deg,#ffffff0b 1px,transparent 1px);background-size:72px 72px;-webkit-mask:linear-gradient(#000 20%,transparent 90%);mask:linear-gradient(#000 20%,transparent 90%)}
+a{color:inherit}
+.wrap{max-width:1280px;margin:auto;padding:0 24px}
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:#0b0b0de6;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:26px;height:88px;overflow-x:auto}
+.logo{margin-right:auto;display:block;line-height:0;flex:none}.logo svg{height:74px;width:auto;display:block}
+.top a.n{font-size:13px;color:var(--mut);text-decoration:none;white-space:nowrap;letter-spacing:.04em}
+.top a.n b{color:var(--red);font-weight:600;margin-right:6px}
+.top a.n:hover{color:var(--ink)}
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:space-between;padding:110px 0 70px;position:relative;isolation:isolate}
+.kicker{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);display:inline-flex;align-items:center;gap:12px}.kicker::before{content:"";width:28px;height:2px;background:var(--red)}
+h1{font-size:clamp(56px,10vw,150px);line-height:.9;letter-spacing:-.05em;margin:24px 0 0;font-weight:800}
+.hero .meta{display:flex;flex-wrap:wrap;gap:40px;margin-top:80px;align-items:flex-end;justify-content:space-between}
+.hero .meta p{max-width:520px;color:var(--mut);margin:0;font-size:18px;line-height:1.6}
+.big0{font-size:clamp(64px,10vw,140px);font-weight:800;line-height:1;letter-spacing:-.04em}
+.big0 span{color:var(--red)}
+.hbig{font-size:clamp(64px,10vw,140px);font-weight:800;line-height:1;letter-spacing:-.04em;color:var(--ink)}
+.bigwrap{text-align:right}.bigwrap span{display:block;color:var(--mut);font-size:15px;margin-top:10px;max-width:260px;margin-left:auto;line-height:1.45}
+/* sections */
+.sec{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:100px 0 10px;border-top:1px solid var(--line);margin-top:80px}
+.lab{position:sticky;top:120px;align-self:start}
+.num{font-size:13px;color:var(--red);font-weight:600;letter-spacing:.1em}.lab .num::after{content:"";display:block;width:44px;height:2px;background:var(--red);margin-top:14px}
+.lab h2{font-size:clamp(28px,3.6vw,42px);line-height:1.05;letter-spacing:-.03em;margin:10px 0 0;font-weight:800}
+.lead{color:var(--mut);font-size:18px;max-width:720px;margin:0 0 34px}
+.lead b{color:var(--ink)}
+.sub{margin:44px 0 14px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+/* stats */
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.st{padding:26px 22px;border-left:1px solid var(--line)}.st:first-child{border-left:0}
+.st b{display:block;font-size:50px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1.1}
+.st span{color:var(--mut);font-size:14px}
+/* funnel */
+.fun{display:grid;gap:10px}
+.fl{border-radius:10px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;color:#fff;border:1px solid #ffffff14}
+.fl b{font-size:26px}.fl span{font-size:14px;opacity:.9}
+.nt{color:var(--mut);font-size:13px;margin-top:14px}
+/* guide cards */
+.gd{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:0 0 14px}
+.gd>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;font-size:14px;color:var(--mut)}
+.gd b{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}.gd em{font-style:normal;color:var(--red2)}
+.ic{font-size:26px;display:block;margin-bottom:8px}
+/* highlights */
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.hl>div{border-radius:16px;padding:22px;background:linear-gradient(150deg,#1a0b0d,#2a1214);border:1px solid var(--line)}
+.hl b{display:block;font-size:28px;margin-bottom:6px;letter-spacing:-.02em}.hl span{color:#d6c7c7;font-size:14px}
+/* charts */
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:16px}
+@media(max-width:520px){.cg{grid-template-columns:1fr}}
+.pnl{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.pnl h3{margin:0 0 4px;font-size:18px}.pnl p{margin:0 0 16px;color:var(--mut);font-size:14px}
+.br{display:grid;grid-template-columns:170px 1fr 92px;gap:10px;align-items:center;margin:9px 0;font-size:13px}
+.br i{font-style:normal;color:var(--mut)}.br b{text-align:right}
+.tr{height:12px;background:#ffffff12;border-radius:9px;overflow:hidden}.tr u{display:block;height:100%;border-radius:9px;background:var(--g)}
+@media(max-width:520px){.br{grid-template-columns:1fr 70px}.br .tr{grid-column:1/3;order:3}}
+/* insights */
+.ins{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 36px}
+.ins>div{padding:26px 0;border-top:1px solid var(--line)}
+.ins b{display:block;font-size:19px;margin-bottom:8px}.ins p{margin:0;color:var(--mut);font-size:15px}
+.ins em{font-style:normal;color:var(--red2)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;counter-reset:s}
+.steps>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;font-size:14px;color:var(--mut);border-top:2px solid var(--red)}
+.steps>div:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;margin-bottom:10px}
+.steps b{display:block;color:var(--ink);margin-bottom:4px;font-size:16px}
+/* filters + cards */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 22px}
+.tabs button{background:transparent;color:var(--mut);border:1px solid var(--line);padding:9px 16px;border-radius:99px;font-size:14px;cursor:pointer;font-family:inherit}
+.tabs button:hover{color:var(--ink)}
+.tabs button.on{background:var(--red);color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;padding-bottom:20px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s}
+.c:hover{transform:translateY(-4px);border-color:#3a3a42}
+.c:before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--g)}
+.c.lv{border-color:#e11d2b66}
+.k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.c h3{margin:6px 0 14px;font-size:18px}
+.big{font-size:38px;font-weight:800;letter-spacing:-.02em;background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lb{color:var(--mut);font-size:13px;margin-bottom:14px}
+.r{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:8px 0;font-size:14px;color:var(--mut)}.r b{color:var(--ink)}
+.live{float:right;font-size:11px;color:#34d399;border:1px solid #34d39966;padding:2px 8px;border-radius:99px}
+.ex{margin-top:12px;padding:10px 12px;border-radius:12px;background:#ffffff0d;color:var(--mut);font-size:13px}.ex b{color:var(--ink)}
+.pls{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}.pl{font-size:11px;padding:3px 9px;border-radius:99px;border:1px solid var(--line);color:var(--mut)}.pl.g{color:#34d399;border-color:#34d39966}.pl.y{color:#fbbf24;border-color:#fbbf2466}
+/* footer */
+.site-foot{margin-top:100px;border-top:1px solid var(--line);background:#08080a;color:var(--mut);font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-top:56px;padding-bottom:40px}
+.site-foot h4{margin:0 0 16px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);font-weight:700}
+.site-foot a{color:var(--mut);text-decoration:none}.site-foot a:hover{color:var(--ink)}
+.flogo svg{height:80px;width:auto;display:block;margin-bottom:18px}
+.fbot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 30px;border-top:1px solid var(--line);padding:22px 0 30px;font-size:13px}
+@media(max-width:860px){.sec{grid-template-columns:1fr;gap:24px}.lab{position:static}.br{grid-template-columns:1fr 70px}.fgrid{grid-template-columns:1fr 1fr}.st{border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+
+/* responsive */
+.sec>div,.hero>*{min-width:0}
+.grid{grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr))}
+.gd{grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))}
+.cg{grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr))}
+.hero{overflow:visible}
+.hero .meta{align-items:flex-end}
+.hbig,.big0{max-width:100%}
+.tabs{overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;padding-bottom:6px}
+.tabs button{flex:none}
+@media(max-width:1100px){.sec{gap:32px}.lab{top:90px}}
+@media(max-width:860px){
+ .hero{min-height:auto;padding:56px 0 30px}
+ .hero .meta{flex-direction:column;align-items:flex-start;gap:28px}
+ .bigwrap{text-align:left}
+ .bigwrap span{margin-left:0}
+ .strip{grid-template-columns:1fr 1fr}
+ .st:nth-child(odd){border-left:0}
+ .st{border-top:1px solid var(--line)}
+ .sec{margin-top:60px;padding-top:60px}
+ .lab{position:static}
+ .ins{grid-template-columns:1fr}
+ .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+ body{font-size:15px}
+ .hero{overflow:hidden}
+ .wrap{padding:0 18px}
+ .top .wrap{height:72px;gap:18px}
+ .logo svg{height:52px}
+ .top a.n{font-size:12px}
+  .kicker{font-size:11px;letter-spacing:.14em}
+ h1{font-size:clamp(44px,14vw,70px)}
+ .hero .meta p,.lead{font-size:16px}
+ .hbig{font-size:clamp(64px,22vw,96px)}
+ .st b{font-size:38px}
+ .strip{grid-template-columns:1fr}
+ .st{border-left:0}
+ .st:first-child{border-top:0}
+ .sec{margin-top:48px;padding-top:44px;gap:20px}
+ .lab h2{font-size:28px}
+ .cg,.grid,.gd,.hl,.steps{grid-template-columns:1fr}
+ .fl{padding:14px 16px}.fl b{font-size:20px}
+ .c{padding:18px}
+ .big{font-size:32px}
+ .fgrid{grid-template-columns:1fr;gap:28px}
+ .fbot{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* watermark: starts at the left edge of the heading, sits behind "Meta Ads Portfolio" */
+h1{position:relative;isolation:isolate}
+h1::before{content:"PORTFOLIO";position:absolute;left:0;top:58%;transform:translateY(-50%);font-size:clamp(60px,16vw,260px);font-weight:800;letter-spacing:-.05em;line-height:1;color:transparent;-webkit-text-stroke:1px #ffffff26;white-space:nowrap;z-index:-1;pointer-events:none}
+@media(max-width:860px){h1::before{font-size:clamp(56px,19vw,130px);top:50%}}
+
+
+/* glassmorphism cards */
+@media screen{
+.c,.pnl,.gd>div,.steps>div,.hl>div{background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.025))!important;backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.14)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 24px 60px -24px rgba(0,0,0,.7)}
+}
+/* light red gradient from the top-left corner (background only) */
+html::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(760px 560px at 0% 0%,rgba(225,29,43,.40),rgba(225,29,43,.14) 45%,transparent 72%)}
+/* header: matches the reference: the page's red glow shows through unchanged, with a soft dark band below */
+.top{background:rgba(11,11,13,.2)!important;-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.10);box-shadow:0 10px 24px -4px rgba(0,0,0,.4)}
+</style></head><body>
+<nav class="top" aria-label="Sections"><div class="wrap">
+<span class="logo" aria-label="Magestix Solutions"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2412.00 1032.00" role="img" aria-label="Magestix Solutions" class="logo-svg"><title>Magestix Solutions</title><g transform="translate(0.000000,1032.000000) scale(0.100000,-0.100000)"
+fill="#e11d2b" >
+<path d="M10020 9270 c-20 -20 -41 -30 -60 -30 -19 0 -40 -10 -60 -30 -20 -20
+-41 -30 -60 -30 -22 0 -42 -12 -75 -45 -33 -33 -45 -53 -45 -75 0 -19 -10 -40
+-30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 l-30 -31 0 -209 0
+-209 30 -31 c20 -20 30 -41 30 -60 0 -25 23 -52 135 -165 l135 -135 90 0 c86
+0 91 -1 120 -30 31 -30 31 -30 150 -30 119 0 119 0 150 30 27 27 38 30 90 30
+l60 0 135 135 c112 113 135 140 135 165 0 19 10 40 30 60 l30 31 0 209 0 209
+-30 31 c-20 20 -30 41 -30 60 0 25 -23 52 -135 165 -113 112 -140 135 -165
+135 -19 0 -40 10 -60 30 l-31 30 -209 0 -209 0 -31 -30z"/>
+<path d="M12060 9030 c-20 -20 -41 -30 -60 -30 -24 0 -49 -19 -135 -105 -86
+-86 -105 -111 -105 -135 0 -19 -10 -40 -30 -60 -27 -27 -30 -38 -30 -90 0 -52
+-3 -63 -30 -90 -29 -29 -30 -34 -30 -120 0 -86 -1 -91 -30 -120 -27 -27 -30
+-38 -30 -90 0 -52 -3 -63 -30 -90 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30
+-60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0
+-22 -14 -44 -60 -90 -46 -47 -60 -68 -60 -90 0 -25 -23 -52 -135 -165 -113
+-112 -140 -135 -165 -135 -22 0 -43 -14 -90 -60 -46 -46 -68 -60 -90 -60 -19
+0 -40 -10 -60 -30 l-31 -30 -146 0 -147 0 -33 -32 -33 -32 -33 32 -33 32 -117
+0 c-116 0 -116 0 -147 30 -27 27 -38 30 -90 30 -52 0 -63 3 -90 30 -20 20 -41
+30 -60 30 -19 0 -40 10 -60 30 -20 20 -41 30 -60 30 -24 0 -51 21 -150 120
+-99 98 -126 120 -150 120 -37 0 -60 23 -60 60 0 24 -18 48 -90 120 -72 73 -90
+96 -90 120 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20
+20 -30 41 -30 60 0 19 -10 40 -30 60 -29 29 -30 34 -30 120 0 86 -1 91 -30
+120 -27 27 -30 38 -30 90 0 52 -3 63 -30 90 -20 20 -30 41 -30 60 0 25 -23 52
+-135 165 l-135 135 -60 0 c-52 0 -63 3 -90 30 -31 30 -31 30 -150 30 -119 0
+-119 0 -150 -30 -27 -27 -38 -30 -90 -30 l-60 0 -165 -165 -165 -165 0 -60 c0
+-52 -3 -63 -30 -90 -30 -31 -30 -31 -30 -150 0 -119 0 -119 30 -150 20 -20 30
+-41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -24 21 -51 120 -150
+99 -99 120 -126 120 -150 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -19 10
+-40 30 -60 l30 -31 0 -209 0 -209 -30 -31 c-20 -20 -30 -41 -30 -60 0 -19 -10
+-40 -30 -60 -20 -20 -30 -41 -30 -60 0 -24 -18 -47 -90 -120 -72 -73 -90 -96
+-90 -120 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30
+-60 l-30 -31 0 -179 0 -179 30 -31 c20 -20 30 -41 30 -60 0 -19 10 -40 30 -60
+20 -20 30 -41 30 -60 0 -41 79 -120 120 -120 22 0 44 -14 90 -60 61 -60 61
+-60 120 -60 52 0 63 -3 90 -30 31 -30 31 -30 150 -30 119 0 119 0 150 30 27
+27 38 30 90 30 l60 0 135 135 c112 113 135 140 135 165 0 19 10 40 30 60 27
+27 30 38 30 90 0 52 3 63 30 90 27 27 30 38 30 90 0 52 -3 63 -30 90 -27 27
+-30 38 -30 90 0 52 -3 63 -30 90 -20 20 -30 41 -30 60 0 25 -28 58 -180 210
+-152 152 -180 185 -180 210 0 19 -10 40 -30 60 l-30 31 0 179 0 179 30 31 c19
+20 30 41 30 60 0 50 21 60 120 60 86 0 91 -1 120 -30 20 -20 41 -30 60 -30 19
+0 40 -10 60 -30 20 -20 41 -30 60 -30 22 0 44 -14 90 -60 47 -46 68 -60 90
+-60 43 0 180 -137 180 -180 0 -22 14 -43 60 -90 46 -46 60 -68 60 -90 0 -22
+14 -44 60 -90 60 -61 60 -61 60 -120 0 -52 3 -63 30 -90 27 -27 30 -38 30 -90
+0 -52 3 -63 30 -90 29 -29 30 -34 30 -120 0 -86 1 -91 30 -120 20 -20 30 -41
+30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -43 137 -180 180 -180 19
+0 40 -10 60 -30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30 29 -29 34 -30 120
+-30 86 0 91 1 120 30 27 27 38 30 90 30 52 0 63 3 90 30 20 20 41 30 60 30 24
+0 49 19 135 105 86 86 105 111 105 135 0 19 10 40 30 60 29 29 30 34 30 120 0
+86 1 91 30 120 27 27 30 38 30 90 0 52 3 63 30 90 27 27 30 38 30 90 0 52 3
+63 30 90 20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 22 14 44 60
+90 46 47 60 68 60 90 0 24 19 49 105 135 86 86 111 105 135 105 22 0 43 14 90
+60 46 46 68 60 90 60 19 0 40 10 60 30 20 20 41 30 60 30 19 0 40 10 60 30 29
+29 34 30 120 30 86 0 91 1 120 30 l31 30 149 0 149 0 31 -30 c29 -29 34 -30
+120 -30 86 0 91 -1 120 -30 27 -27 38 -30 90 -30 59 0 59 0 120 -60 47 -46 68
+-60 90 -60 25 0 59 -30 225 -195 165 -166 195 -200 195 -225 0 -22 14 -43 60
+-90 46 -46 60 -68 60 -90 0 -19 10 -40 30 -60 27 -27 30 -38 30 -90 0 -52 3
+-63 30 -90 27 -27 30 -38 30 -90 0 -52 3 -63 30 -90 27 -27 30 -38 30 -90 0
+-59 0 -59 60 -120 46 -46 60 -68 60 -90 0 -41 79 -120 120 -120 19 0 40 -10
+60 -30 20 -20 41 -30 60 -30 19 0 40 -10 60 -30 l31 -30 179 0 179 0 31 30
+c20 20 41 30 60 30 25 0 52 23 165 135 112 113 135 140 135 165 0 19 10 40 30
+60 l30 31 0 209 0 209 -30 31 c-20 20 -30 41 -30 60 0 24 -19 49 -105 135 -86
+86 -111 105 -135 105 -19 0 -40 10 -60 30 -27 27 -38 30 -90 30 -52 0 -63 3
+-90 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 30 -29 29 -34 30 -120 30
+-86 0 -91 1 -120 30 -20 20 -41 30 -60 30 -19 0 -40 10 -60 30 -20 20 -41 30
+-60 30 -19 0 -40 10 -60 30 -20 20 -41 30 -60 30 -22 0 -44 14 -90 60 -47 46
+-68 60 -90 60 -24 0 -45 16 -105 75 -59 60 -75 81 -75 105 0 22 -14 43 -60 90
+-46 46 -60 68 -60 90 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40
+-30 60 -27 27 -30 38 -30 90 0 52 -3 63 -30 90 -27 27 -30 38 -30 90 0 52 -3
+63 -30 90 -29 29 -30 34 -30 120 0 86 -1 91 -30 120 -20 20 -30 41 -30 60 0
+24 -19 49 -105 135 -86 86 -111 105 -135 105 -19 0 -40 10 -60 30 l-31 30
+-239 0 -239 0 -31 -30z"/>
+<path d="M12240 6870 c-27 -27 -38 -30 -90 -30 l-60 0 -135 -135 c-112 -113
+-135 -140 -135 -165 0 -19 -10 -40 -30 -60 -27 -27 -30 -38 -30 -90 0 -52 -3
+-63 -30 -90 -20 -20 -30 -41 -30 -60 0 -19 10 -40 30 -60 29 -29 30 -34 30
+-120 0 -86 1 -91 30 -120 20 -20 30 -41 30 -60 0 -24 19 -49 105 -135 86 -86
+111 -105 135 -105 19 0 40 -10 60 -30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30
+29 -29 34 -30 120 -30 86 0 91 1 120 30 27 27 38 30 90 30 l60 0 165 165 165
+165 0 90 c0 86 1 91 30 120 27 27 30 38 30 90 0 52 -3 63 -30 90 -27 27 -30
+38 -30 90 0 52 -3 63 -30 90 -20 20 -30 41 -30 60 0 24 -19 49 -105 135 -86
+86 -111 105 -135 105 -19 0 -40 10 -60 30 -27 27 -38 30 -90 30 -52 0 -63 3
+-90 30 -29 29 -34 30 -120 30 -86 0 -91 -1 -120 -30z"/>
+</g>
+<g transform="translate(0.000000,1032.000000) scale(0.100000,-0.100000)"
+fill="#ffffff" >
+<path d="M20457 6090 c-21 -18 -46 -30 -62 -30 -22 0 -50 -22 -131 -104 l-104
+-103 0 -154 0 -153 133 -133 133 -133 122 0 c121 0 122 0 155 30 20 17 46 30
+61 30 37 0 176 139 176 176 0 15 13 41 30 61 29 32 30 38 30 123 0 85 -1 91
+-30 123 -17 20 -30 46 -30 61 0 37 -139 176 -176 176 -15 0 -41 13 -61 30 -32
+29 -38 30 -123 30 -85 0 -91 -1 -123 -30z m347 -166 l76 -77 0 -147 0 -147
+-76 -77 c-60 -59 -83 -76 -105 -76 -17 0 -42 -12 -62 -30 -29 -25 -43 -30 -87
+-30 -44 0 -58 5 -87 30 -19 17 -45 30 -61 30 -37 0 -122 84 -122 122 0 16 -12
+41 -30 61 -28 33 -30 40 -30 117 0 77 2 84 30 117 19 21 30 45 30 63 0 37 23
+60 61 60 18 0 41 11 61 30 l33 29 146 1 146 0 77 -76z"/>
+<path d="M20469 5863 c-11 -12 -13 -45 -11 -137 4 -147 13 -162 65 -117 44 39
+73 39 114 -1 32 -31 34 -31 51 -14 16 16 15 19 -18 47 l-35 29 35 29 c33 28
+34 31 18 47 -17 17 -19 17 -51 -14 -38 -37 -75 -41 -102 -12 -14 16 -17 30
+-12 72 5 40 3 56 -10 70 -20 22 -27 22 -44 1z"/>
+<path d="M20650 5864 c-11 -12 -10 -18 3 -32 16 -15 18 -15 34 0 13 14 14 20
+3 32 -7 9 -16 16 -20 16 -4 0 -13 -7 -20 -16z"/>
+<path d="M17235 5805 c-59 -60 -75 -81 -75 -105 0 -19 -10 -40 -30 -60 -27
+-27 -30 -38 -30 -90 0 -52 3 -63 30 -90 27 -27 30 -38 30 -90 l0 -60 75 -75
+75 -75 180 0 179 0 31 30 c20 19 41 30 60 30 37 0 60 23 60 60 0 19 11 40 30
+60 l30 31 0 149 0 149 -30 31 c-19 20 -30 41 -30 60 0 37 -23 60 -60 60 -19 0
+-40 11 -60 30 l-31 30 -179 0 -180 0 -75 -75z"/>
+<path d="M1576 5504 c-14 -14 -16 -157 -16 -1424 0 -1267 2 -1410 16 -1424 13
+-14 56 -16 314 -16 261 0 301 2 315 16 14 14 16 101 15 887 -1 764 1 872 14
+885 21 21 46 -1 46 -40 0 -19 11 -43 30 -65 19 -21 30 -45 30 -63 0 -19 10
+-40 30 -60 20 -20 30 -41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0
+-19 10 -40 30 -60 27 -27 30 -38 30 -90 0 -52 3 -63 30 -90 20 -20 30 -41 30
+-60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -19 10 -40 30 -60 20 -20 30
+-41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -19 10 -40 30 -60 20
+-20 30 -41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -19 10 -40 30
+-60 19 -20 30 -41 30 -60 0 -58 8 -60 270 -60 262 0 270 2 270 60 0 19 11 40
+30 60 20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60
+20 20 30 41 30 60 0 19 10 40 30 60 27 27 30 38 30 90 0 52 3 63 30 90 20 20
+30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41
+30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60
+0 19 10 40 30 60 27 27 30 37 30 92 0 59 1 62 45 106 81 80 76 136 75 -855 0
+-784 1 -873 16 -887 13 -14 54 -16 314 -16 258 0 301 2 314 16 14 14 16 157
+16 1424 0 1267 -2 1410 -16 1424 -13 14 -64 16 -404 16 -427 0 -420 1 -420
+-60 0 -19 -11 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20
+-20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10
+-40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41
+-30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60
+-20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19
+-10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30
+-41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30
+-60 -20 -20 -30 -41 -30 -61 0 -22 -12 -43 -45 -77 l-45 -47 -45 47 c-33 34
+-45 55 -45 77 0 20 -10 41 -30 61 -20 20 -30 41 -30 60 0 19 -10 40 -30 60
+-20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40
+-30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19
+-10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60
+0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41
+-30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20
+-30 41 -30 60 0 19 -10 40 -30 60 -19 20 -30 41 -30 60 0 61 7 60 -420 60
+-340 0 -391 -2 -404 -16z"/>
+<path d="M15436 5384 c-14 -13 -16 -50 -16 -254 0 -204 -2 -241 -16 -254 -12
+-13 -40 -16 -134 -16 -94 0 -122 -3 -134 -16 -14 -13 -16 -48 -16 -224 0 -176
+2 -211 16 -224 12 -13 40 -16 134 -16 94 0 122 -3 134 -16 14 -14 16 -83 16
+-614 l0 -599 30 -31 c27 -27 30 -38 30 -90 l0 -60 135 -135 135 -135 60 0 c52
+0 63 -3 90 -30 l31 -30 269 0 269 0 31 30 c27 27 38 30 90 30 57 0 61 2 105
+45 l45 46 0 89 c0 86 -1 91 -30 120 -29 29 -30 34 -30 120 0 116 -4 120 -120
+120 -86 0 -91 -1 -120 -30 -41 -40 -79 -40 -120 0 -20 19 -41 30 -60 30 -37 0
+-60 23 -60 60 0 19 -11 40 -30 60 l-30 31 0 479 c0 422 2 480 16 494 13 14 53
+16 284 16 231 0 271 2 284 16 24 23 24 425 0 448 -13 14 -53 16 -284 16 -231
+0 -271 2 -284 16 -14 13 -16 50 -16 254 0 204 -2 241 -16 254 -13 14 -59 16
+-344 16 -285 0 -331 -2 -344 -16z"/>
+<path d="M6240 4890 l-31 -30 -149 0 -149 0 -31 -30 c-27 -27 -38 -30 -90 -30
+-52 0 -63 -3 -90 -30 -27 -27 -38 -30 -90 -30 -52 0 -63 -3 -90 -30 -22 -21
+-40 -30 -64 -30 -54 0 -63 -22 -26 -63 17 -19 30 -46 30 -60 0 -16 12 -39 30
+-57 27 -27 30 -38 30 -90 0 -52 3 -63 30 -90 19 -20 30 -41 30 -60 0 -64 68
+-81 120 -30 27 27 38 30 90 30 52 0 63 3 90 30 29 29 34 30 120 30 86 0 91 1
+120 30 31 30 31 30 150 30 119 0 119 0 150 -30 27 -27 38 -30 90 -30 57 0 61
+-2 105 -45 33 -33 45 -53 45 -75 0 -19 10 -40 30 -60 26 -27 30 -38 30 -90 0
+-97 35 -90 -480 -90 l-449 0 -31 -30 c-27 -27 -38 -30 -90 -30 -59 0 -59 0
+-120 -60 -46 -45 -68 -60 -90 -60 -37 0 -60 -23 -60 -60 0 -19 -11 -40 -30
+-60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 l-30 -31 0 -209 0 -209 30
+-31 c20 -20 30 -41 30 -60 0 -25 23 -52 135 -165 l135 -135 60 0 c52 0 63 -3
+90 -30 l31 -30 269 0 269 0 31 30 c20 20 41 30 60 30 19 0 40 10 60 30 20 19
+41 30 60 30 22 0 43 14 89 62 57 58 62 60 79 45 16 -14 18 -29 14 -105 -4 -73
+-1 -91 13 -105 15 -15 50 -17 345 -17 285 0 331 2 344 16 14 14 16 102 16 824
+l0 809 -30 31 c-27 27 -30 38 -30 90 l0 60 -165 165 c-139 139 -170 165 -195
+165 -19 0 -40 10 -60 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 30 l-31 30
+-179 0 -179 0 -31 -30z m464 -1306 c12 -12 16 -37 16 -104 0 -86 -1 -91 -30
+-120 -20 -20 -30 -41 -30 -60 0 -41 -79 -120 -120 -120 -19 0 -40 -10 -60 -30
+l-31 -30 -179 0 -179 0 -46 45 c-33 33 -45 53 -45 75 0 19 -10 40 -30 60 -20
+20 -30 41 -30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 22 12 42 45 75 l46 45
+299 0 c258 0 301 -2 314 -16z"/>
+<path d="M8580 4890 c-29 -29 -34 -30 -120 -30 -86 0 -91 -1 -120 -30 -20 -20
+-41 -30 -60 -30 -25 0 -56 -26 -195 -165 -139 -139 -165 -170 -165 -195 0 -19
+-10 -40 -30 -60 -27 -27 -30 -38 -30 -90 0 -52 -3 -63 -30 -90 l-30 -31 0
+-329 0 -329 30 -31 c27 -27 30 -38 30 -90 0 -52 3 -63 30 -90 20 -20 30 -41
+30 -60 0 -25 26 -56 165 -195 l165 -165 60 0 c52 0 63 -3 90 -30 29 -29 34
+-30 120 -30 86 0 91 -1 120 -30 27 -27 38 -30 90 -30 52 0 63 3 90 30 29 29
+34 30 120 30 86 0 91 1 120 30 20 20 41 30 60 30 25 0 47 17 120 92 88 90 91
+91 108 72 16 -17 17 -37 12 -199 l-5 -181 -103 -102 c-83 -83 -108 -102 -132
+-102 -19 0 -40 -10 -60 -30 l-31 -30 -239 0 -239 0 -31 30 c-27 27 -38 30 -90
+30 -52 0 -63 3 -90 30 -20 20 -41 30 -60 30 -19 0 -40 10 -60 30 -52 51 -120
+34 -120 -30 0 -19 -11 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30
+-60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -44 -45 -40 -79 15 -135
+33 -33 53 -45 75 -45 19 0 40 -10 60 -30 20 -20 41 -30 60 -30 19 0 40 -10 60
+-30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30 l31 -30 449 0 449 0 31 30 c27 27
+38 30 90 30 52 0 63 3 90 30 20 20 41 30 60 30 25 0 56 26 195 165 139 139
+165 170 165 195 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60 l30 31
+0 1139 c0 1022 -2 1140 -16 1154 -13 14 -59 16 -344 16 -295 0 -330 -2 -345
+-17 -14 -14 -17 -32 -13 -105 4 -76 2 -91 -14 -105 -17 -15 -23 -11 -108 75
+-73 75 -95 92 -120 92 -19 0 -40 10 -60 30 -27 27 -38 30 -90 30 -52 0 -63 3
+-90 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 -30z m420 -540 c27 -27 38
+-30 90 -30 l60 0 75 -75 c59 -60 75 -81 75 -105 0 -19 10 -40 30 -60 l30 -31
+0 -209 0 -209 -30 -31 c-20 -20 -30 -41 -30 -60 0 -43 -137 -180 -180 -180
+-19 0 -40 -10 -60 -30 -31 -30 -31 -30 -150 -30 -119 0 -119 0 -150 30 -20 20
+-41 30 -60 30 -24 0 -45 16 -105 75 l-75 75 0 60 c0 52 -3 63 -30 90 l-30 31
+0 149 0 149 30 31 c20 20 30 41 30 60 0 19 10 40 30 60 19 20 30 41 30 60 0
+37 23 60 60 60 19 0 40 11 60 30 20 20 41 30 60 30 19 0 40 10 60 30 27 27 38
+30 90 30 52 0 63 -3 90 -30z"/>
+<path d="M11460 4890 c-29 -29 -34 -30 -120 -30 -86 0 -91 -1 -120 -30 -27
+-27 -38 -30 -90 -30 -59 0 -59 0 -120 -60 -47 -46 -68 -60 -90 -60 -24 0 -49
+-19 -135 -105 -86 -86 -105 -111 -105 -135 0 -22 -14 -43 -60 -90 -60 -61 -60
+-61 -60 -120 0 -52 -3 -63 -30 -90 l-30 -31 0 -359 0 -359 30 -31 c20 -20 30
+-41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -22 14 -44 60 -90 46
+-46 60 -68 60 -90 0 -41 79 -120 120 -120 22 0 44 -14 90 -60 46 -46 68 -60
+90 -60 19 0 40 -10 60 -30 29 -29 34 -30 120 -30 86 0 91 -1 120 -30 l31 -30
+299 0 299 0 31 30 c27 27 38 30 90 30 52 0 63 3 90 30 27 27 38 30 90 30 59 0
+59 0 120 60 46 46 68 60 90 60 22 0 42 12 75 45 74 74 72 77 -120 270 -198
+197 -193 196 -285 105 -61 -60 -61 -60 -120 -60 -52 0 -63 -3 -90 -30 l-31
+-30 -179 0 -179 0 -31 30 c-20 20 -41 30 -60 30 -43 0 -180 137 -180 180 0 19
+-10 40 -30 60 -34 34 -40 79 -14 104 14 14 97 16 764 16 667 0 750 2 764 16
+13 13 16 45 16 194 l0 179 -30 31 c-29 29 -30 34 -30 120 0 86 -1 91 -30 120
+-20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 25 -23 52
+-135 165 -113 112 -140 135 -165 135 -19 0 -40 10 -60 30 -20 20 -41 30 -60
+30 -19 0 -40 10 -60 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 30 l-31 30
+-149 0 -149 0 -31 -30z m465 -585 c59 -60 75 -81 75 -105 0 -19 10 -40 30 -60
+26 -27 30 -38 30 -90 0 -96 27 -90 -420 -90 -447 0 -420 -6 -420 90 0 59 0 60
+60 120 45 46 60 68 60 90 0 37 23 60 60 60 19 0 40 11 60 30 l31 30 179 0 180
+0 75 -75z"/>
+<path d="M13800 4890 c-31 -30 -31 -30 -150 -30 -119 0 -119 0 -150 -30 -20
+-20 -41 -30 -60 -30 -25 0 -52 -23 -165 -135 -112 -113 -135 -140 -135 -165 0
+-19 -10 -40 -30 -60 l-30 -31 0 -209 0 -209 30 -31 c20 -20 30 -41 30 -60 0
+-24 19 -49 105 -135 86 -86 111 -105 135 -105 19 0 40 -10 60 -30 27 -27 38
+-30 90 -30 52 0 63 -3 90 -30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30 29 -29
+34 -30 120 -30 86 0 91 -1 120 -30 20 -20 41 -30 60 -30 22 0 42 -12 75 -45
+43 -44 45 -48 45 -105 0 -67 -15 -90 -60 -90 -19 0 -40 -11 -60 -30 l-31 -30
+-149 0 -149 0 -31 30 c-27 27 -38 30 -90 30 -52 0 -63 3 -90 30 -27 27 -38 30
+-90 30 -52 0 -63 3 -90 30 -20 20 -41 30 -60 30 -19 0 -40 10 -60 30 -52 51
+-120 34 -120 -30 0 -19 -11 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10
+-40 -30 -60 -18 -19 -30 -41 -30 -57 0 -17 -12 -40 -32 -61 l-33 -33 78 -75
+c61 -57 85 -74 107 -74 19 0 40 -11 60 -30 20 -20 41 -30 60 -30 19 0 40 -10
+60 -30 29 -29 34 -30 120 -30 86 0 91 -1 120 -30 l31 -30 359 0 359 0 31 30
+c27 27 38 30 90 30 59 0 59 0 120 60 47 46 68 60 90 60 43 0 180 137 180 180
+0 19 10 40 30 60 29 29 30 34 30 120 0 86 1 91 30 120 20 20 30 41 30 60 0 19
+-10 40 -30 60 -27 27 -30 38 -30 90 0 52 -3 63 -30 90 -20 20 -30 41 -30 60 0
+43 -137 180 -180 180 -19 0 -40 10 -60 30 -20 20 -41 30 -60 30 -19 0 -40 10
+-60 30 -27 27 -38 30 -90 30 -52 0 -63 3 -90 30 -27 27 -38 30 -90 30 -52 0
+-63 3 -90 30 -27 27 -38 30 -90 30 -52 0 -63 3 -90 30 -20 20 -41 30 -60 30
+-41 0 -120 79 -120 120 0 40 79 120 117 120 17 0 40 12 60 32 l33 32 33 -32
+33 -32 117 0 c116 0 116 0 147 -30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30 20
+-20 41 -30 60 -30 19 0 40 -10 60 -30 52 -51 120 -34 120 30 0 19 11 40 30 60
+20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60 44 45
+40 79 -15 135 -33 33 -53 45 -75 45 -19 0 -40 10 -60 30 -27 27 -38 30 -90 30
+-52 0 -63 3 -90 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 30 l-31 30 -179
+0 -179 0 -31 -30z"/>
+<path d="M18255 4851 c-18 -21 -18 -22 43 -82 48 -46 62 -67 62 -89 0 -22 15
+-44 60 -90 46 -46 60 -68 60 -90 0 -22 14 -44 60 -90 46 -46 60 -68 60 -90 0
+-22 14 -44 60 -90 46 -46 60 -68 60 -90 0 -22 14 -44 60 -90 46 -47 60 -68 60
+-90 0 -23 13 -43 63 -89 l62 -60 -32 -33 c-21 -21 -33 -44 -33 -61 0 -19 -17
+-43 -60 -87 -46 -46 -60 -68 -60 -90 0 -22 -14 -44 -60 -90 -46 -46 -60 -68
+-60 -90 0 -22 -14 -44 -60 -90 -46 -46 -60 -68 -60 -90 0 -22 -14 -44 -60 -90
+-46 -46 -60 -68 -60 -90 0 -22 -14 -44 -60 -90 -46 -46 -60 -68 -60 -90 0 -19
+-10 -40 -30 -60 -34 -34 -40 -79 -14 -104 13 -14 61 -16 374 -16 394 0 390 -1
+390 60 0 22 15 44 60 90 46 46 60 68 60 90 0 22 14 44 60 90 46 46 60 68 60
+90 0 22 14 44 60 90 45 46 60 68 60 90 0 36 23 60 60 60 37 0 60 -24 60 -60 0
+-22 15 -44 60 -90 46 -46 60 -68 60 -90 0 -19 10 -40 30 -60 20 -20 30 -41 30
+-60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -24 16 -45 75 -105 l75 -75
+359 0 c314 0 362 2 375 16 26 25 20 70 -14 104 -20 20 -30 41 -30 60 0 22 -14
+44 -60 90 -46 46 -60 68 -60 90 0 22 -14 44 -60 90 -46 46 -60 68 -60 90 0 22
+-14 44 -60 90 -46 46 -60 68 -60 90 0 22 -14 44 -60 90 -46 46 -60 68 -60 90
+0 22 -14 44 -60 90 -43 44 -60 68 -60 87 0 17 -12 40 -32 61 l-33 33 63 60
+c49 46 62 66 62 89 0 22 14 43 60 90 46 46 60 68 60 90 0 22 14 44 60 90 46
+46 60 68 60 90 0 22 14 44 60 90 46 46 60 68 60 90 0 22 14 44 60 90 45 46 60
+68 60 90 0 22 14 43 62 90 60 59 61 61 42 78 -17 16 -50 17 -412 12 -427 -5
+-412 -3 -412 -62 0 -20 -17 -44 -60 -88 -46 -46 -60 -68 -60 -90 0 -22 -14
+-44 -60 -90 -46 -46 -60 -68 -60 -90 0 -19 -10 -40 -30 -60 -21 -22 -30 -40
+-30 -64 0 -19 -7 -39 -15 -46 -23 -19 -105 65 -105 108 0 25 -13 44 -60 92
+-46 46 -60 68 -60 90 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 24 -16 45
+-75 105 l-75 75 -368 0 c-202 0 -376 3 -387 6 -14 3 -27 -2 -40 -15z"/>
+<path d="M17176 4844 c-14 -14 -16 -127 -16 -1094 0 -967 2 -1080 16 -1094 13
+-14 59 -16 344 -16 285 0 331 2 344 16 14 14 16 127 16 1094 0 967 -2 1080
+-16 1094 -13 14 -59 16 -344 16 -285 0 -331 -2 -344 -16z"/>
+<path d="M16696 2324 c-14 -13 -16 -61 -16 -374 l0 -358 41 -43 c37 -38 48
+-44 103 -50 53 -7 64 -5 80 11 20 19 19 20 -42 80 l-62 61 0 329 c0 361 0 360
+-60 360 -16 0 -36 -7 -44 -16z"/>
+<path d="M18376 2324 c-9 -8 -16 -28 -16 -44 0 -36 24 -60 60 -60 36 0 60 24
+60 60 0 36 -24 60 -60 60 -16 0 -36 -7 -44 -16z"/>
+<path d="M15255 2205 l-75 -75 0 -60 0 -60 75 -75 75 -75 60 0 c52 0 63 -3 90
+-30 20 -20 41 -30 61 -30 22 0 42 -12 77 -45 l47 -46 -80 -74 c-79 -74 -81
+-75 -134 -75 -45 0 -59 5 -88 30 -19 17 -45 30 -60 30 -14 0 -41 13 -61 31
+-35 31 -35 31 -55 11 -28 -28 -17 -62 38 -117 l46 -45 179 0 180 0 75 75 75
+75 0 60 0 60 -75 75 -75 75 -60 0 c-52 0 -63 3 -90 30 -20 20 -41 30 -61 30
+-22 0 -42 12 -77 45 l-47 46 80 74 c91 85 110 90 162 45 29 -26 41 -30 93 -30
+67 0 90 15 90 60 0 56 -14 60 -211 60 l-179 0 -75 -75z"/>
+<path d="M17896 2204 c-9 -8 -16 -28 -16 -44 0 -38 -24 -60 -64 -60 -19 0 -39
+-7 -46 -15 -11 -13 -3 -25 49 -76 l61 -60 0 -207 c0 -114 5 -214 10 -222 7
+-11 39 -16 132 -21 111 -6 125 -4 142 12 19 18 19 19 1 39 -15 17 -26 19 -72
+14 -43 -6 -57 -3 -73 11 -19 17 -20 31 -20 197 l0 179 48 44 c35 33 55 45 78
+45 44 0 62 24 39 50 -16 18 -26 20 -75 14 -65 -7 -90 8 -90 56 0 36 -24 60
+-60 60 -16 0 -36 -7 -44 -16z"/>
+<path d="M16080 2070 c-20 -20 -41 -30 -60 -30 -22 0 -42 -12 -75 -45 l-45
+-46 0 -149 0 -150 75 -75 75 -75 150 0 150 0 75 75 c59 60 75 81 75 105 0 19
+10 40 30 60 20 20 30 41 30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 24
+-16 45 -75 105 l-75 75 -120 0 c-119 0 -119 0 -150 -30z m285 -165 c87 -88 95
+-114 45 -165 -20 -20 -30 -41 -30 -61 0 -22 -11 -40 -47 -74 -44 -41 -52 -45
+-102 -45 -45 0 -59 5 -88 30 -21 19 -45 30 -63 30 -53 0 -60 19 -60 150 l0
+119 45 46 46 45 89 0 90 0 75 -75z"/>
+<path d="M17056 2084 c-14 -13 -16 -48 -16 -224 l0 -209 30 -31 c18 -19 30
+-41 30 -58 0 -52 10 -57 142 -63 l123 -7 35 34 c45 43 79 44 120 4 34 -34 79
+-40 104 -14 14 13 16 53 16 284 0 295 -1 300 -60 300 -56 0 -60 -14 -60 -210
+l0 -178 -76 -76 c-99 -99 -106 -99 -207 -2 l-77 75 0 180 c0 198 -4 211 -60
+211 -16 0 -36 -7 -44 -16z"/>
+<path d="M18369 2082 c-21 -26 -11 -558 11 -572 34 -22 62 -23 82 -2 l21 20
+-27 25 c-33 30 -33 47 -1 77 25 23 25 25 25 201 l0 178 -31 36 c-44 50 -63 59
+-80 37z"/>
+<path d="M18735 2025 c-59 -60 -75 -81 -75 -105 0 -19 -10 -40 -30 -60 -27
+-27 -30 -38 -30 -90 0 -52 3 -63 30 -90 20 -20 30 -41 30 -60 0 -22 12 -42 45
+-75 l46 -45 179 0 180 0 75 75 75 75 0 120 c0 119 0 119 -30 150 -19 20 -30
+41 -30 60 0 37 -23 60 -60 60 -19 0 -40 11 -60 30 -31 30 -31 30 -150 30
+l-120 0 -75 -75z m360 -90 l45 -46 0 -90 0 -90 -77 -75 c-77 -74 -77 -74 -133
+-74 -56 0 -56 0 -133 74 l-77 75 0 60 c0 54 3 64 30 91 19 20 30 41 30 60 0
+53 19 60 150 60 l119 0 46 -45z"/>
+<path d="M19456 2084 c-14 -13 -16 -53 -16 -284 0 -295 1 -300 60 -300 56 0
+60 13 60 211 l0 180 48 44 47 45 87 0 c97 0 118 -11 118 -60 0 -19 11 -40 30
+-60 30 -31 30 -31 30 -147 0 -115 0 -116 -31 -151 -30 -34 -30 -35 -12 -53 15
+-15 27 -17 81 -10 37 4 67 14 73 22 5 8 9 94 9 191 l0 177 -30 31 c-20 20 -30
+41 -30 60 0 22 -12 42 -45 75 l-46 45 -89 0 c-85 0 -91 -1 -123 -30 -20 -17
+-46 -30 -60 -30 -16 0 -39 12 -57 30 -34 34 -79 40 -104 14z"/>
+<path d="M20280 2070 c-20 -19 -41 -30 -60 -30 -45 0 -60 -23 -60 -91 l0 -59
+75 -75 75 -75 60 0 c55 0 63 -3 100 -36 22 -20 40 -45 40 -54 0 -10 -20 -35
+-44 -54 -37 -31 -50 -36 -96 -36 -44 0 -58 5 -87 30 -57 50 -123 34 -123 -30
+0 -56 14 -60 210 -60 195 0 210 4 210 58 0 16 12 39 32 59 l32 33 -32 33 c-20
+20 -32 43 -32 59 0 35 -24 58 -60 58 -19 0 -40 11 -60 30 -27 26 -38 30 -90
+30 -67 0 -90 15 -90 60 0 52 19 60 150 60 131 0 150 8 150 60 0 53 -19 60
+-150 60 -119 0 -119 0 -150 -30z"/>
+</g>
+</svg></span>
+<a class="n" href="#summary"><b>01</b>Summary</a><a class="n" href="#journey"><b>02</b>Journey</a><a class="n" href="#guide"><b>03</b>Guide</a><a class="n" href="#highlights"><b>04</b>Highlights</a><a class="n" href="#clients"><b>05</b>Clients</a><a class="n" href="#charts"><b>06</b>Charts</a><a class="n" href="#insights"><b>07</b>Insights</a><a class="n" href="#process"><b>08</b>Process</a><a class="n" href="#campaigns"><b>09</b>Campaigns</a>
+</div></nav>
+
+<header class="hero wrap">
+<div><span class="kicker">Magestix Solutions · Meta Ads 2024–2026</span>
+<h1>Meta Ads<br>Portfolio</h1></div>
+<div class="meta"><p>A complete look at the Facebook and Instagram ad campaigns we have run for our clients: what each one aimed to do, what it achieved, and what it cost.</p><div class="bigwrap"><div class="hbig" id="heroN">41</div><span>campaigns run for our clients since June 2024, with 24 featured in detail below</span></div></div>
+</header>
+
+<main class="wrap">
+
+<section class="sec" id="summary"><div class="lab"><div class="num">01</div><h2>In short</h2></div><div>
+<p class="lead"><b>How to use this page:</b> jump to a section from the menu above. Each campaign card explains what the result means and how its cost compares with similar campaigns.</p>
+<p class="lead">Since June 2024 we have run <b>41 Meta Ads campaigns</b> for our clients on Facebook and Instagram. Together they were shown <b>9.8 million+ times</b>, reached <b>over 2 million people</b>, added <b>137,000+ followers</b> and started <b>14,800+ direct customer conversations</b>. The campaign cards in section 09 show the <b>24 featured campaigns</b> in detail; the 41 figure is the total run.</p>
+<div class="strip">
+<div class="st"><b>41</b><span>Campaigns run across all clients (24 featured in detail below)</span></div>
+<div class="st"><b>9.8M+</b><span>Times our ads were shown (impressions)</span></div>
+<div class="st"><b>2M+</b><span>Unique people reached by awareness campaigns</span></div>
+<div class="st"><b>137K+</b><span>New followers and page likes</span></div>
+<div class="st"><b>41.9K</b><span>Visits to profile and WhatsApp channel</span></div>
+<div class="st"><b>14.8K+</b><span>Customer conversations started on WhatsApp/Messenger</span></div>
+</div>
+</div></section>
+
+<section class="sec" id="journey"><div class="lab"><div class="num">02</div><h2>How our campaigns work together</h2></div><div>
+<p class="lead">Every campaign supports one step of the customer journey. Together they take a person from never hearing about a brand to contacting it directly.</p>
+<div class="fun">
+<div class="fl" style="width:100%;background:linear-gradient(90deg,#e11d2b,#b91c1c)"><div><b>1. Awareness</b><br><span>People introduced to the brand</span></div><b>2,056,776</b></div>
+<div class="fl" style="width:82%;background:linear-gradient(90deg,#b91c1c,#7f1d1d)"><div><b>2. Engagement</b><br><span>People who liked or followed</span></div><b>137,501</b></div>
+<div class="fl" style="width:64%;background:linear-gradient(90deg,#52525b,#3f3f46)"><div><b>3. Traffic</b><br><span>People who visited profile or channel</span></div><b>41,922</b></div>
+<div class="fl" style="width:46%;background:linear-gradient(90deg,#27272a,#18181b)"><div><b>4. Leads</b><br><span>Direct customer conversations</span></div><b>14,887</b></div>
+</div>
+<p class="nt">Each stage counts a different thing (people reached, followers, visits, conversations). The numbers show scale at each step, not a conversion rate.</p>
+</div></section>
+
+<section class="sec" id="guide"><div class="lab"><div class="num">03</div><h2>How to read this portfolio</h2></div><div>
+<p class="lead">Each campaign has one clear goal. This is what each goal means in plain English.</p>
+<div class="gd">
+<div><span class="ic">📣</span><b>Awareness</b>Goal: show the brand to as many new, relevant people as possible. <em>Measured by Reach</em>, the number of different people who saw the ad.</div>
+<div><span class="ic">💜</span><b>Engagement</b>Goal: grow the brand’s Facebook and Instagram community with new likes and followers. <em>Measured by Followers &amp; likes</em>.</div>
+<div><span class="ic">💬</span><b>Leads &amp; Messaging</b>Goal: get interested customers to message the brand directly (account opening, enquiries). <em>Measured by Conversations</em>.</div>
+<div><span class="ic">🔗</span><b>Traffic</b>Goal: bring people to the brand’s profile or WhatsApp channel. <em>Measured by Visits</em>.</div>
+</div>
+<div class="gd">
+<div><b>Reach</b>The number of unique people who saw the ad. One person is counted once.</div>
+<div><b>Impressions</b>The total number of times the ad appeared on a screen. One person can see it more than once, so this is higher than Reach.</div>
+<div><b>Frequency</b>The average number of times each person saw the ad (for example 2.85x).</div>
+<div><b>Cost per result</b>What one result costs: one follow, one conversation, or reaching 1,000 people. <em>Lower is better.</em></div>
+<div><b>LIVE badge</b>This campaign is currently running.</div>
+</div>
+</div></section>
+
+<section class="sec" id="highlights"><div class="lab"><div class="num">04</div><h2>Results that stand out</h2></div><div>
+<div class="hl">
+<div><b>130,015 followers</b><span>MMK Like/Followers Campaign. Each new follower cost just Rs 2.35.</span></div>
+<div><b>41,922 visits</b><span>WhatsApp Channel Campaign. Each visit cost only Rs 1.81.</span></div>
+<div><b>564,584 people reached</b><span>FDM Awareness Campaign. The largest single reach among our campaigns.</span></div>
+<div><b>3,614 conversations</b><span>MMK Account Opening. The most customer conversations from one campaign.</span></div>
+</div>
+</div></section>
+
+<section class="sec" id="clients"><div class="lab"><div class="num">05</div><h2>Results by client</h2></div><div>
+<p class="lead">Combined results of the featured campaigns for each brand.</p>
+<div class="gd" id="cl"></div>
+</div></section>
+
+<section class="sec" id="charts"><div class="lab"><div class="num">06</div><h2>Performance at a glance</h2></div><div>
+<p class="lead">Bars show the biggest results in each category, so you can compare campaigns quickly.</p>
+<div class="cg">
+<div class="pnl"><h3>People reached (Awareness)</h3><p>Higher is better. Number of unique people who saw the ad.</p><div id="c1"></div></div>
+<div class="pnl"><h3>Customer conversations (Leads)</h3><p>Higher is better. Messages started with the brand.</p><div id="c2"></div></div>
+<div class="pnl"><h3>Cost per follower or like (Engagement)</h3><p>Lower is better. Rupees paid for each new follower.</p><div id="c3"></div></div>
+<div class="pnl"><h3>Cost per 1,000 people reached</h3><p>Lower is better. Rupees paid to show the ad to 1,000 people.</p><div id="c4"></div></div>
+</div>
+</div></section>
+
+<section class="sec" id="insights"><div class="lab"><div class="num">07</div><h2>What the numbers tell us</h2></div><div>
+<p class="lead">Patterns we found across all campaigns.</p>
+<div class="ins">
+<div><b>Engagement is our most affordable goal</b><p>New followers cost between <em>Rs 1.60 and Rs 11.42</em> each. The best result: Rang e Zar at Rs 1.60, followed by MMK at Rs 2.35 across 130,015 followers.</p></div>
+<div><b>Awareness is steady and predictable</b><p>Reaching 1,000 people cost <em>Rs 8.29 to Rs 18.01</em>. Rang e Zar and MMK delivered the lowest cost.</p></div>
+<div><b>Lead cost depends on intent</b><p>A conversation cost <em>Rs 17.55 to Rs 93.72</em>. Account-opening campaigns usually sit at the higher end (Rs 44 to Rs 78) because they target people ready to take a serious step.</p></div>
+<div><b>WhatsApp channel drives cheap traffic</b><p>41,922 visits at just <em>Rs 1.81</em> each, a low-cost way to build a direct line to the audience.</p></div>
+</div>
+<div class="sub">Recommended next steps</div>
+<div class="hl">
+<div><b>Scale what works</b><span>Increase budget on the campaigns with the lowest cost per result, such as the Rang e Zar and MMK engagement campaigns.</span></div>
+<div><b>Turn fans into customers</b><span>Show lead and account-opening ads to people who already follow or engage with the brand.</span></div>
+<div><b>Refresh weaker creatives</b><span>Test new images, videos and messages on campaigns that cost more than the average for their goal.</span></div>
+</div>
+</div></section>
+
+<section class="sec" id="process"><div class="lab"><div class="num">08</div><h2>How we run every campaign</h2></div><div>
+<p class="lead">A repeatable process that keeps results consistent from one client to the next.</p>
+<div class="steps">
+<div><b>Goal setting</b>We agree on one clear objective: awareness, engagement, traffic or leads.</div>
+<div><b>Audience</b>We define who should see the ad by location, age, interests and behaviour.</div>
+<div><b>Creative</b>Images, videos and copy are designed to match the goal and the brand.</div>
+<div><b>Launch</b>Budgets, schedules and placements are set, then the campaign goes live.</div>
+<div><b>Optimise</b>We watch results daily and shift budget to what works best.</div>
+<div><b>Report</b>You receive clear numbers on reach, results and cost.</div>
+</div>
+</div></section>
+
+<section class="sec" id="campaigns"><div class="lab"><div class="num">09</div><h2>Campaign details</h2></div><div>
+<p class="lead">Filter by goal. Each card shows the result, its cost, and what it means in simple words. A green tag means the cost is lower than the average of similar campaigns; ★ marks the best value in its category.</p>
+<div class="tabs" id="t"></div>
+<div class="grid" id="g"></div>
+</div></section>
+
+</main>
+
+<footer class="site-foot"><div class="wrap fgrid">
+<div><div class="flogo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2412.00 1032.00" role="img" aria-label="Magestix Solutions" class="logo-svg"><title>Magestix Solutions</title><g transform="translate(0.000000,1032.000000) scale(0.100000,-0.100000)"
+fill="#e11d2b" >
+<path d="M10020 9270 c-20 -20 -41 -30 -60 -30 -19 0 -40 -10 -60 -30 -20 -20
+-41 -30 -60 -30 -22 0 -42 -12 -75 -45 -33 -33 -45 -53 -45 -75 0 -19 -10 -40
+-30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 l-30 -31 0 -209 0
+-209 30 -31 c20 -20 30 -41 30 -60 0 -25 23 -52 135 -165 l135 -135 90 0 c86
+0 91 -1 120 -30 31 -30 31 -30 150 -30 119 0 119 0 150 30 27 27 38 30 90 30
+l60 0 135 135 c112 113 135 140 135 165 0 19 10 40 30 60 l30 31 0 209 0 209
+-30 31 c-20 20 -30 41 -30 60 0 25 -23 52 -135 165 -113 112 -140 135 -165
+135 -19 0 -40 10 -60 30 l-31 30 -209 0 -209 0 -31 -30z"/>
+<path d="M12060 9030 c-20 -20 -41 -30 -60 -30 -24 0 -49 -19 -135 -105 -86
+-86 -105 -111 -105 -135 0 -19 -10 -40 -30 -60 -27 -27 -30 -38 -30 -90 0 -52
+-3 -63 -30 -90 -29 -29 -30 -34 -30 -120 0 -86 -1 -91 -30 -120 -27 -27 -30
+-38 -30 -90 0 -52 -3 -63 -30 -90 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30
+-60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0
+-22 -14 -44 -60 -90 -46 -47 -60 -68 -60 -90 0 -25 -23 -52 -135 -165 -113
+-112 -140 -135 -165 -135 -22 0 -43 -14 -90 -60 -46 -46 -68 -60 -90 -60 -19
+0 -40 -10 -60 -30 l-31 -30 -146 0 -147 0 -33 -32 -33 -32 -33 32 -33 32 -117
+0 c-116 0 -116 0 -147 30 -27 27 -38 30 -90 30 -52 0 -63 3 -90 30 -20 20 -41
+30 -60 30 -19 0 -40 10 -60 30 -20 20 -41 30 -60 30 -24 0 -51 21 -150 120
+-99 98 -126 120 -150 120 -37 0 -60 23 -60 60 0 24 -18 48 -90 120 -72 73 -90
+96 -90 120 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20
+20 -30 41 -30 60 0 19 -10 40 -30 60 -29 29 -30 34 -30 120 0 86 -1 91 -30
+120 -27 27 -30 38 -30 90 0 52 -3 63 -30 90 -20 20 -30 41 -30 60 0 25 -23 52
+-135 165 l-135 135 -60 0 c-52 0 -63 3 -90 30 -31 30 -31 30 -150 30 -119 0
+-119 0 -150 -30 -27 -27 -38 -30 -90 -30 l-60 0 -165 -165 -165 -165 0 -60 c0
+-52 -3 -63 -30 -90 -30 -31 -30 -31 -30 -150 0 -119 0 -119 30 -150 20 -20 30
+-41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -24 21 -51 120 -150
+99 -99 120 -126 120 -150 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -19 10
+-40 30 -60 l30 -31 0 -209 0 -209 -30 -31 c-20 -20 -30 -41 -30 -60 0 -19 -10
+-40 -30 -60 -20 -20 -30 -41 -30 -60 0 -24 -18 -47 -90 -120 -72 -73 -90 -96
+-90 -120 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30
+-60 l-30 -31 0 -179 0 -179 30 -31 c20 -20 30 -41 30 -60 0 -19 10 -40 30 -60
+20 -20 30 -41 30 -60 0 -41 79 -120 120 -120 22 0 44 -14 90 -60 61 -60 61
+-60 120 -60 52 0 63 -3 90 -30 31 -30 31 -30 150 -30 119 0 119 0 150 30 27
+27 38 30 90 30 l60 0 135 135 c112 113 135 140 135 165 0 19 10 40 30 60 27
+27 30 38 30 90 0 52 3 63 30 90 27 27 30 38 30 90 0 52 -3 63 -30 90 -27 27
+-30 38 -30 90 0 52 -3 63 -30 90 -20 20 -30 41 -30 60 0 25 -28 58 -180 210
+-152 152 -180 185 -180 210 0 19 -10 40 -30 60 l-30 31 0 179 0 179 30 31 c19
+20 30 41 30 60 0 50 21 60 120 60 86 0 91 -1 120 -30 20 -20 41 -30 60 -30 19
+0 40 -10 60 -30 20 -20 41 -30 60 -30 22 0 44 -14 90 -60 47 -46 68 -60 90
+-60 43 0 180 -137 180 -180 0 -22 14 -43 60 -90 46 -46 60 -68 60 -90 0 -22
+14 -44 60 -90 60 -61 60 -61 60 -120 0 -52 3 -63 30 -90 27 -27 30 -38 30 -90
+0 -52 3 -63 30 -90 29 -29 30 -34 30 -120 0 -86 1 -91 30 -120 20 -20 30 -41
+30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -43 137 -180 180 -180 19
+0 40 -10 60 -30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30 29 -29 34 -30 120
+-30 86 0 91 1 120 30 27 27 38 30 90 30 52 0 63 3 90 30 20 20 41 30 60 30 24
+0 49 19 135 105 86 86 105 111 105 135 0 19 10 40 30 60 29 29 30 34 30 120 0
+86 1 91 30 120 27 27 30 38 30 90 0 52 3 63 30 90 27 27 30 38 30 90 0 52 3
+63 30 90 20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 22 14 44 60
+90 46 47 60 68 60 90 0 24 19 49 105 135 86 86 111 105 135 105 22 0 43 14 90
+60 46 46 68 60 90 60 19 0 40 10 60 30 20 20 41 30 60 30 19 0 40 10 60 30 29
+29 34 30 120 30 86 0 91 1 120 30 l31 30 149 0 149 0 31 -30 c29 -29 34 -30
+120 -30 86 0 91 -1 120 -30 27 -27 38 -30 90 -30 59 0 59 0 120 -60 47 -46 68
+-60 90 -60 25 0 59 -30 225 -195 165 -166 195 -200 195 -225 0 -22 14 -43 60
+-90 46 -46 60 -68 60 -90 0 -19 10 -40 30 -60 27 -27 30 -38 30 -90 0 -52 3
+-63 30 -90 27 -27 30 -38 30 -90 0 -52 3 -63 30 -90 27 -27 30 -38 30 -90 0
+-59 0 -59 60 -120 46 -46 60 -68 60 -90 0 -41 79 -120 120 -120 19 0 40 -10
+60 -30 20 -20 41 -30 60 -30 19 0 40 -10 60 -30 l31 -30 179 0 179 0 31 30
+c20 20 41 30 60 30 25 0 52 23 165 135 112 113 135 140 135 165 0 19 10 40 30
+60 l30 31 0 209 0 209 -30 31 c-20 20 -30 41 -30 60 0 24 -19 49 -105 135 -86
+86 -111 105 -135 105 -19 0 -40 10 -60 30 -27 27 -38 30 -90 30 -52 0 -63 3
+-90 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 30 -29 29 -34 30 -120 30
+-86 0 -91 1 -120 30 -20 20 -41 30 -60 30 -19 0 -40 10 -60 30 -20 20 -41 30
+-60 30 -19 0 -40 10 -60 30 -20 20 -41 30 -60 30 -22 0 -44 14 -90 60 -47 46
+-68 60 -90 60 -24 0 -45 16 -105 75 -59 60 -75 81 -75 105 0 22 -14 43 -60 90
+-46 46 -60 68 -60 90 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40
+-30 60 -27 27 -30 38 -30 90 0 52 -3 63 -30 90 -27 27 -30 38 -30 90 0 52 -3
+63 -30 90 -29 29 -30 34 -30 120 0 86 -1 91 -30 120 -20 20 -30 41 -30 60 0
+24 -19 49 -105 135 -86 86 -111 105 -135 105 -19 0 -40 10 -60 30 l-31 30
+-239 0 -239 0 -31 -30z"/>
+<path d="M12240 6870 c-27 -27 -38 -30 -90 -30 l-60 0 -135 -135 c-112 -113
+-135 -140 -135 -165 0 -19 -10 -40 -30 -60 -27 -27 -30 -38 -30 -90 0 -52 -3
+-63 -30 -90 -20 -20 -30 -41 -30 -60 0 -19 10 -40 30 -60 29 -29 30 -34 30
+-120 0 -86 1 -91 30 -120 20 -20 30 -41 30 -60 0 -24 19 -49 105 -135 86 -86
+111 -105 135 -105 19 0 40 -10 60 -30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30
+29 -29 34 -30 120 -30 86 0 91 1 120 30 27 27 38 30 90 30 l60 0 165 165 165
+165 0 90 c0 86 1 91 30 120 27 27 30 38 30 90 0 52 -3 63 -30 90 -27 27 -30
+38 -30 90 0 52 -3 63 -30 90 -20 20 -30 41 -30 60 0 24 -19 49 -105 135 -86
+86 -111 105 -135 105 -19 0 -40 10 -60 30 -27 27 -38 30 -90 30 -52 0 -63 3
+-90 30 -29 29 -34 30 -120 30 -86 0 -91 -1 -120 -30z"/>
+</g>
+<g transform="translate(0.000000,1032.000000) scale(0.100000,-0.100000)"
+fill="#ffffff" >
+<path d="M20457 6090 c-21 -18 -46 -30 -62 -30 -22 0 -50 -22 -131 -104 l-104
+-103 0 -154 0 -153 133 -133 133 -133 122 0 c121 0 122 0 155 30 20 17 46 30
+61 30 37 0 176 139 176 176 0 15 13 41 30 61 29 32 30 38 30 123 0 85 -1 91
+-30 123 -17 20 -30 46 -30 61 0 37 -139 176 -176 176 -15 0 -41 13 -61 30 -32
+29 -38 30 -123 30 -85 0 -91 -1 -123 -30z m347 -166 l76 -77 0 -147 0 -147
+-76 -77 c-60 -59 -83 -76 -105 -76 -17 0 -42 -12 -62 -30 -29 -25 -43 -30 -87
+-30 -44 0 -58 5 -87 30 -19 17 -45 30 -61 30 -37 0 -122 84 -122 122 0 16 -12
+41 -30 61 -28 33 -30 40 -30 117 0 77 2 84 30 117 19 21 30 45 30 63 0 37 23
+60 61 60 18 0 41 11 61 30 l33 29 146 1 146 0 77 -76z"/>
+<path d="M20469 5863 c-11 -12 -13 -45 -11 -137 4 -147 13 -162 65 -117 44 39
+73 39 114 -1 32 -31 34 -31 51 -14 16 16 15 19 -18 47 l-35 29 35 29 c33 28
+34 31 18 47 -17 17 -19 17 -51 -14 -38 -37 -75 -41 -102 -12 -14 16 -17 30
+-12 72 5 40 3 56 -10 70 -20 22 -27 22 -44 1z"/>
+<path d="M20650 5864 c-11 -12 -10 -18 3 -32 16 -15 18 -15 34 0 13 14 14 20
+3 32 -7 9 -16 16 -20 16 -4 0 -13 -7 -20 -16z"/>
+<path d="M17235 5805 c-59 -60 -75 -81 -75 -105 0 -19 -10 -40 -30 -60 -27
+-27 -30 -38 -30 -90 0 -52 3 -63 30 -90 27 -27 30 -38 30 -90 l0 -60 75 -75
+75 -75 180 0 179 0 31 30 c20 19 41 30 60 30 37 0 60 23 60 60 0 19 11 40 30
+60 l30 31 0 149 0 149 -30 31 c-19 20 -30 41 -30 60 0 37 -23 60 -60 60 -19 0
+-40 11 -60 30 l-31 30 -179 0 -180 0 -75 -75z"/>
+<path d="M1576 5504 c-14 -14 -16 -157 -16 -1424 0 -1267 2 -1410 16 -1424 13
+-14 56 -16 314 -16 261 0 301 2 315 16 14 14 16 101 15 887 -1 764 1 872 14
+885 21 21 46 -1 46 -40 0 -19 11 -43 30 -65 19 -21 30 -45 30 -63 0 -19 10
+-40 30 -60 20 -20 30 -41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0
+-19 10 -40 30 -60 27 -27 30 -38 30 -90 0 -52 3 -63 30 -90 20 -20 30 -41 30
+-60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -19 10 -40 30 -60 20 -20 30
+-41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -19 10 -40 30 -60 20
+-20 30 -41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -19 10 -40 30
+-60 19 -20 30 -41 30 -60 0 -58 8 -60 270 -60 262 0 270 2 270 60 0 19 11 40
+30 60 20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60
+20 20 30 41 30 60 0 19 10 40 30 60 27 27 30 38 30 90 0 52 3 63 30 90 20 20
+30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41
+30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60
+0 19 10 40 30 60 27 27 30 37 30 92 0 59 1 62 45 106 81 80 76 136 75 -855 0
+-784 1 -873 16 -887 13 -14 54 -16 314 -16 258 0 301 2 314 16 14 14 16 157
+16 1424 0 1267 -2 1410 -16 1424 -13 14 -64 16 -404 16 -427 0 -420 1 -420
+-60 0 -19 -11 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20
+-20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10
+-40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41
+-30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60
+-20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19
+-10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30
+-41 -30 -60 0 -19 -10 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30
+-60 -20 -20 -30 -41 -30 -61 0 -22 -12 -43 -45 -77 l-45 -47 -45 47 c-33 34
+-45 55 -45 77 0 20 -10 41 -30 61 -20 20 -30 41 -30 60 0 19 -10 40 -30 60
+-20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40
+-30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19
+-10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60
+0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41
+-30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20
+-30 41 -30 60 0 19 -10 40 -30 60 -19 20 -30 41 -30 60 0 61 7 60 -420 60
+-340 0 -391 -2 -404 -16z"/>
+<path d="M15436 5384 c-14 -13 -16 -50 -16 -254 0 -204 -2 -241 -16 -254 -12
+-13 -40 -16 -134 -16 -94 0 -122 -3 -134 -16 -14 -13 -16 -48 -16 -224 0 -176
+2 -211 16 -224 12 -13 40 -16 134 -16 94 0 122 -3 134 -16 14 -14 16 -83 16
+-614 l0 -599 30 -31 c27 -27 30 -38 30 -90 l0 -60 135 -135 135 -135 60 0 c52
+0 63 -3 90 -30 l31 -30 269 0 269 0 31 30 c27 27 38 30 90 30 57 0 61 2 105
+45 l45 46 0 89 c0 86 -1 91 -30 120 -29 29 -30 34 -30 120 0 116 -4 120 -120
+120 -86 0 -91 -1 -120 -30 -41 -40 -79 -40 -120 0 -20 19 -41 30 -60 30 -37 0
+-60 23 -60 60 0 19 -11 40 -30 60 l-30 31 0 479 c0 422 2 480 16 494 13 14 53
+16 284 16 231 0 271 2 284 16 24 23 24 425 0 448 -13 14 -53 16 -284 16 -231
+0 -271 2 -284 16 -14 13 -16 50 -16 254 0 204 -2 241 -16 254 -13 14 -59 16
+-344 16 -285 0 -331 -2 -344 -16z"/>
+<path d="M6240 4890 l-31 -30 -149 0 -149 0 -31 -30 c-27 -27 -38 -30 -90 -30
+-52 0 -63 -3 -90 -30 -27 -27 -38 -30 -90 -30 -52 0 -63 -3 -90 -30 -22 -21
+-40 -30 -64 -30 -54 0 -63 -22 -26 -63 17 -19 30 -46 30 -60 0 -16 12 -39 30
+-57 27 -27 30 -38 30 -90 0 -52 3 -63 30 -90 19 -20 30 -41 30 -60 0 -64 68
+-81 120 -30 27 27 38 30 90 30 52 0 63 3 90 30 29 29 34 30 120 30 86 0 91 1
+120 30 31 30 31 30 150 30 119 0 119 0 150 -30 27 -27 38 -30 90 -30 57 0 61
+-2 105 -45 33 -33 45 -53 45 -75 0 -19 10 -40 30 -60 26 -27 30 -38 30 -90 0
+-97 35 -90 -480 -90 l-449 0 -31 -30 c-27 -27 -38 -30 -90 -30 -59 0 -59 0
+-120 -60 -46 -45 -68 -60 -90 -60 -37 0 -60 -23 -60 -60 0 -19 -11 -40 -30
+-60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 l-30 -31 0 -209 0 -209 30
+-31 c20 -20 30 -41 30 -60 0 -25 23 -52 135 -165 l135 -135 60 0 c52 0 63 -3
+90 -30 l31 -30 269 0 269 0 31 30 c20 20 41 30 60 30 19 0 40 10 60 30 20 19
+41 30 60 30 22 0 43 14 89 62 57 58 62 60 79 45 16 -14 18 -29 14 -105 -4 -73
+-1 -91 13 -105 15 -15 50 -17 345 -17 285 0 331 2 344 16 14 14 16 102 16 824
+l0 809 -30 31 c-27 27 -30 38 -30 90 l0 60 -165 165 c-139 139 -170 165 -195
+165 -19 0 -40 10 -60 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 30 l-31 30
+-179 0 -179 0 -31 -30z m464 -1306 c12 -12 16 -37 16 -104 0 -86 -1 -91 -30
+-120 -20 -20 -30 -41 -30 -60 0 -41 -79 -120 -120 -120 -19 0 -40 -10 -60 -30
+l-31 -30 -179 0 -179 0 -46 45 c-33 33 -45 53 -45 75 0 19 -10 40 -30 60 -20
+20 -30 41 -30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 22 12 42 45 75 l46 45
+299 0 c258 0 301 -2 314 -16z"/>
+<path d="M8580 4890 c-29 -29 -34 -30 -120 -30 -86 0 -91 -1 -120 -30 -20 -20
+-41 -30 -60 -30 -25 0 -56 -26 -195 -165 -139 -139 -165 -170 -165 -195 0 -19
+-10 -40 -30 -60 -27 -27 -30 -38 -30 -90 0 -52 -3 -63 -30 -90 l-30 -31 0
+-329 0 -329 30 -31 c27 -27 30 -38 30 -90 0 -52 3 -63 30 -90 20 -20 30 -41
+30 -60 0 -25 26 -56 165 -195 l165 -165 60 0 c52 0 63 -3 90 -30 29 -29 34
+-30 120 -30 86 0 91 -1 120 -30 27 -27 38 -30 90 -30 52 0 63 3 90 30 29 29
+34 30 120 30 86 0 91 1 120 30 20 20 41 30 60 30 25 0 47 17 120 92 88 90 91
+91 108 72 16 -17 17 -37 12 -199 l-5 -181 -103 -102 c-83 -83 -108 -102 -132
+-102 -19 0 -40 -10 -60 -30 l-31 -30 -239 0 -239 0 -31 30 c-27 27 -38 30 -90
+30 -52 0 -63 3 -90 30 -20 20 -41 30 -60 30 -19 0 -40 10 -60 30 -52 51 -120
+34 -120 -30 0 -19 -11 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30
+-60 -20 -20 -30 -41 -30 -60 0 -19 -10 -40 -30 -60 -44 -45 -40 -79 15 -135
+33 -33 53 -45 75 -45 19 0 40 -10 60 -30 20 -20 41 -30 60 -30 19 0 40 -10 60
+-30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30 l31 -30 449 0 449 0 31 30 c27 27
+38 30 90 30 52 0 63 3 90 30 20 20 41 30 60 30 25 0 56 26 195 165 139 139
+165 170 165 195 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60 l30 31
+0 1139 c0 1022 -2 1140 -16 1154 -13 14 -59 16 -344 16 -295 0 -330 -2 -345
+-17 -14 -14 -17 -32 -13 -105 4 -76 2 -91 -14 -105 -17 -15 -23 -11 -108 75
+-73 75 -95 92 -120 92 -19 0 -40 10 -60 30 -27 27 -38 30 -90 30 -52 0 -63 3
+-90 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 -30z m420 -540 c27 -27 38
+-30 90 -30 l60 0 75 -75 c59 -60 75 -81 75 -105 0 -19 10 -40 30 -60 l30 -31
+0 -209 0 -209 -30 -31 c-20 -20 -30 -41 -30 -60 0 -43 -137 -180 -180 -180
+-19 0 -40 -10 -60 -30 -31 -30 -31 -30 -150 -30 -119 0 -119 0 -150 30 -20 20
+-41 30 -60 30 -24 0 -45 16 -105 75 l-75 75 0 60 c0 52 -3 63 -30 90 l-30 31
+0 149 0 149 30 31 c20 20 30 41 30 60 0 19 10 40 30 60 19 20 30 41 30 60 0
+37 23 60 60 60 19 0 40 11 60 30 20 20 41 30 60 30 19 0 40 10 60 30 27 27 38
+30 90 30 52 0 63 -3 90 -30z"/>
+<path d="M11460 4890 c-29 -29 -34 -30 -120 -30 -86 0 -91 -1 -120 -30 -27
+-27 -38 -30 -90 -30 -59 0 -59 0 -120 -60 -47 -46 -68 -60 -90 -60 -24 0 -49
+-19 -135 -105 -86 -86 -105 -111 -105 -135 0 -22 -14 -43 -60 -90 -60 -61 -60
+-61 -60 -120 0 -52 -3 -63 -30 -90 l-30 -31 0 -359 0 -359 30 -31 c20 -20 30
+-41 30 -60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -22 14 -44 60 -90 46
+-46 60 -68 60 -90 0 -41 79 -120 120 -120 22 0 44 -14 90 -60 46 -46 68 -60
+90 -60 19 0 40 -10 60 -30 29 -29 34 -30 120 -30 86 0 91 -1 120 -30 l31 -30
+299 0 299 0 31 30 c27 27 38 30 90 30 52 0 63 3 90 30 27 27 38 30 90 30 59 0
+59 0 120 60 46 46 68 60 90 60 22 0 42 12 75 45 74 74 72 77 -120 270 -198
+197 -193 196 -285 105 -61 -60 -61 -60 -120 -60 -52 0 -63 -3 -90 -30 l-31
+-30 -179 0 -179 0 -31 30 c-20 20 -41 30 -60 30 -43 0 -180 137 -180 180 0 19
+-10 40 -30 60 -34 34 -40 79 -14 104 14 14 97 16 764 16 667 0 750 2 764 16
+13 13 16 45 16 194 l0 179 -30 31 c-29 29 -30 34 -30 120 0 86 -1 91 -30 120
+-20 20 -30 41 -30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 25 -23 52
+-135 165 -113 112 -140 135 -165 135 -19 0 -40 10 -60 30 -20 20 -41 30 -60
+30 -19 0 -40 10 -60 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 30 l-31 30
+-149 0 -149 0 -31 -30z m465 -585 c59 -60 75 -81 75 -105 0 -19 10 -40 30 -60
+26 -27 30 -38 30 -90 0 -96 27 -90 -420 -90 -447 0 -420 -6 -420 90 0 59 0 60
+60 120 45 46 60 68 60 90 0 37 23 60 60 60 19 0 40 11 60 30 l31 30 179 0 180
+0 75 -75z"/>
+<path d="M13800 4890 c-31 -30 -31 -30 -150 -30 -119 0 -119 0 -150 -30 -20
+-20 -41 -30 -60 -30 -25 0 -52 -23 -165 -135 -112 -113 -135 -140 -135 -165 0
+-19 -10 -40 -30 -60 l-30 -31 0 -209 0 -209 30 -31 c20 -20 30 -41 30 -60 0
+-24 19 -49 105 -135 86 -86 111 -105 135 -105 19 0 40 -10 60 -30 27 -27 38
+-30 90 -30 52 0 63 -3 90 -30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30 29 -29
+34 -30 120 -30 86 0 91 -1 120 -30 20 -20 41 -30 60 -30 22 0 42 -12 75 -45
+43 -44 45 -48 45 -105 0 -67 -15 -90 -60 -90 -19 0 -40 -11 -60 -30 l-31 -30
+-149 0 -149 0 -31 30 c-27 27 -38 30 -90 30 -52 0 -63 3 -90 30 -27 27 -38 30
+-90 30 -52 0 -63 3 -90 30 -20 20 -41 30 -60 30 -19 0 -40 10 -60 30 -52 51
+-120 34 -120 -30 0 -19 -11 -40 -30 -60 -20 -20 -30 -41 -30 -60 0 -19 -10
+-40 -30 -60 -18 -19 -30 -41 -30 -57 0 -17 -12 -40 -32 -61 l-33 -33 78 -75
+c61 -57 85 -74 107 -74 19 0 40 -11 60 -30 20 -20 41 -30 60 -30 19 0 40 -10
+60 -30 29 -29 34 -30 120 -30 86 0 91 -1 120 -30 l31 -30 359 0 359 0 31 30
+c27 27 38 30 90 30 59 0 59 0 120 60 47 46 68 60 90 60 43 0 180 137 180 180
+0 19 10 40 30 60 29 29 30 34 30 120 0 86 1 91 30 120 20 20 30 41 30 60 0 19
+-10 40 -30 60 -27 27 -30 38 -30 90 0 52 -3 63 -30 90 -20 20 -30 41 -30 60 0
+43 -137 180 -180 180 -19 0 -40 10 -60 30 -20 20 -41 30 -60 30 -19 0 -40 10
+-60 30 -27 27 -38 30 -90 30 -52 0 -63 3 -90 30 -27 27 -38 30 -90 30 -52 0
+-63 3 -90 30 -27 27 -38 30 -90 30 -52 0 -63 3 -90 30 -20 20 -41 30 -60 30
+-41 0 -120 79 -120 120 0 40 79 120 117 120 17 0 40 12 60 32 l33 32 33 -32
+33 -32 117 0 c116 0 116 0 147 -30 27 -27 38 -30 90 -30 52 0 63 -3 90 -30 20
+-20 41 -30 60 -30 19 0 40 -10 60 -30 52 -51 120 -34 120 30 0 19 11 40 30 60
+20 20 30 41 30 60 0 19 10 40 30 60 20 20 30 41 30 60 0 19 10 40 30 60 44 45
+40 79 -15 135 -33 33 -53 45 -75 45 -19 0 -40 10 -60 30 -27 27 -38 30 -90 30
+-52 0 -63 3 -90 30 -31 30 -31 30 -150 30 -119 0 -119 0 -150 30 l-31 30 -179
+0 -179 0 -31 -30z"/>
+<path d="M18255 4851 c-18 -21 -18 -22 43 -82 48 -46 62 -67 62 -89 0 -22 15
+-44 60 -90 46 -46 60 -68 60 -90 0 -22 14 -44 60 -90 46 -46 60 -68 60 -90 0
+-22 14 -44 60 -90 46 -46 60 -68 60 -90 0 -22 14 -44 60 -90 46 -47 60 -68 60
+-90 0 -23 13 -43 63 -89 l62 -60 -32 -33 c-21 -21 -33 -44 -33 -61 0 -19 -17
+-43 -60 -87 -46 -46 -60 -68 -60 -90 0 -22 -14 -44 -60 -90 -46 -46 -60 -68
+-60 -90 0 -22 -14 -44 -60 -90 -46 -46 -60 -68 -60 -90 0 -22 -14 -44 -60 -90
+-46 -46 -60 -68 -60 -90 0 -22 -14 -44 -60 -90 -46 -46 -60 -68 -60 -90 0 -19
+-10 -40 -30 -60 -34 -34 -40 -79 -14 -104 13 -14 61 -16 374 -16 394 0 390 -1
+390 60 0 22 15 44 60 90 46 46 60 68 60 90 0 22 14 44 60 90 46 46 60 68 60
+90 0 22 14 44 60 90 45 46 60 68 60 90 0 36 23 60 60 60 37 0 60 -24 60 -60 0
+-22 15 -44 60 -90 46 -46 60 -68 60 -90 0 -19 10 -40 30 -60 20 -20 30 -41 30
+-60 0 -19 10 -40 30 -60 20 -20 30 -41 30 -60 0 -24 16 -45 75 -105 l75 -75
+359 0 c314 0 362 2 375 16 26 25 20 70 -14 104 -20 20 -30 41 -30 60 0 22 -14
+44 -60 90 -46 46 -60 68 -60 90 0 22 -14 44 -60 90 -46 46 -60 68 -60 90 0 22
+-14 44 -60 90 -46 46 -60 68 -60 90 0 22 -14 44 -60 90 -46 46 -60 68 -60 90
+0 22 -14 44 -60 90 -43 44 -60 68 -60 87 0 17 -12 40 -32 61 l-33 33 63 60
+c49 46 62 66 62 89 0 22 14 43 60 90 46 46 60 68 60 90 0 22 14 44 60 90 46
+46 60 68 60 90 0 22 14 44 60 90 46 46 60 68 60 90 0 22 14 44 60 90 45 46 60
+68 60 90 0 22 14 43 62 90 60 59 61 61 42 78 -17 16 -50 17 -412 12 -427 -5
+-412 -3 -412 -62 0 -20 -17 -44 -60 -88 -46 -46 -60 -68 -60 -90 0 -22 -14
+-44 -60 -90 -46 -46 -60 -68 -60 -90 0 -19 -10 -40 -30 -60 -21 -22 -30 -40
+-30 -64 0 -19 -7 -39 -15 -46 -23 -19 -105 65 -105 108 0 25 -13 44 -60 92
+-46 46 -60 68 -60 90 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 24 -16 45
+-75 105 l-75 75 -368 0 c-202 0 -376 3 -387 6 -14 3 -27 -2 -40 -15z"/>
+<path d="M17176 4844 c-14 -14 -16 -127 -16 -1094 0 -967 2 -1080 16 -1094 13
+-14 59 -16 344 -16 285 0 331 2 344 16 14 14 16 127 16 1094 0 967 -2 1080
+-16 1094 -13 14 -59 16 -344 16 -285 0 -331 -2 -344 -16z"/>
+<path d="M16696 2324 c-14 -13 -16 -61 -16 -374 l0 -358 41 -43 c37 -38 48
+-44 103 -50 53 -7 64 -5 80 11 20 19 19 20 -42 80 l-62 61 0 329 c0 361 0 360
+-60 360 -16 0 -36 -7 -44 -16z"/>
+<path d="M18376 2324 c-9 -8 -16 -28 -16 -44 0 -36 24 -60 60 -60 36 0 60 24
+60 60 0 36 -24 60 -60 60 -16 0 -36 -7 -44 -16z"/>
+<path d="M15255 2205 l-75 -75 0 -60 0 -60 75 -75 75 -75 60 0 c52 0 63 -3 90
+-30 20 -20 41 -30 61 -30 22 0 42 -12 77 -45 l47 -46 -80 -74 c-79 -74 -81
+-75 -134 -75 -45 0 -59 5 -88 30 -19 17 -45 30 -60 30 -14 0 -41 13 -61 31
+-35 31 -35 31 -55 11 -28 -28 -17 -62 38 -117 l46 -45 179 0 180 0 75 75 75
+75 0 60 0 60 -75 75 -75 75 -60 0 c-52 0 -63 3 -90 30 -20 20 -41 30 -61 30
+-22 0 -42 12 -77 45 l-47 46 80 74 c91 85 110 90 162 45 29 -26 41 -30 93 -30
+67 0 90 15 90 60 0 56 -14 60 -211 60 l-179 0 -75 -75z"/>
+<path d="M17896 2204 c-9 -8 -16 -28 -16 -44 0 -38 -24 -60 -64 -60 -19 0 -39
+-7 -46 -15 -11 -13 -3 -25 49 -76 l61 -60 0 -207 c0 -114 5 -214 10 -222 7
+-11 39 -16 132 -21 111 -6 125 -4 142 12 19 18 19 19 1 39 -15 17 -26 19 -72
+14 -43 -6 -57 -3 -73 11 -19 17 -20 31 -20 197 l0 179 48 44 c35 33 55 45 78
+45 44 0 62 24 39 50 -16 18 -26 20 -75 14 -65 -7 -90 8 -90 56 0 36 -24 60
+-60 60 -16 0 -36 -7 -44 -16z"/>
+<path d="M16080 2070 c-20 -20 -41 -30 -60 -30 -22 0 -42 -12 -75 -45 l-45
+-46 0 -149 0 -150 75 -75 75 -75 150 0 150 0 75 75 c59 60 75 81 75 105 0 19
+10 40 30 60 20 20 30 41 30 60 0 19 -10 40 -30 60 -20 20 -30 41 -30 60 0 24
+-16 45 -75 105 l-75 75 -120 0 c-119 0 -119 0 -150 -30z m285 -165 c87 -88 95
+-114 45 -165 -20 -20 -30 -41 -30 -61 0 -22 -11 -40 -47 -74 -44 -41 -52 -45
+-102 -45 -45 0 -59 5 -88 30 -21 19 -45 30 -63 30 -53 0 -60 19 -60 150 l0
+119 45 46 46 45 89 0 90 0 75 -75z"/>
+<path d="M17056 2084 c-14 -13 -16 -48 -16 -224 l0 -209 30 -31 c18 -19 30
+-41 30 -58 0 -52 10 -57 142 -63 l123 -7 35 34 c45 43 79 44 120 4 34 -34 79
+-40 104 -14 14 13 16 53 16 284 0 295 -1 300 -60 300 -56 0 -60 -14 -60 -210
+l0 -178 -76 -76 c-99 -99 -106 -99 -207 -2 l-77 75 0 180 c0 198 -4 211 -60
+211 -16 0 -36 -7 -44 -16z"/>
+<path d="M18369 2082 c-21 -26 -11 -558 11 -572 34 -22 62 -23 82 -2 l21 20
+-27 25 c-33 30 -33 47 -1 77 25 23 25 25 25 201 l0 178 -31 36 c-44 50 -63 59
+-80 37z"/>
+<path d="M18735 2025 c-59 -60 -75 -81 -75 -105 0 -19 -10 -40 -30 -60 -27
+-27 -30 -38 -30 -90 0 -52 3 -63 30 -90 20 -20 30 -41 30 -60 0 -22 12 -42 45
+-75 l46 -45 179 0 180 0 75 75 75 75 0 120 c0 119 0 119 -30 150 -19 20 -30
+41 -30 60 0 37 -23 60 -60 60 -19 0 -40 11 -60 30 -31 30 -31 30 -150 30
+l-120 0 -75 -75z m360 -90 l45 -46 0 -90 0 -90 -77 -75 c-77 -74 -77 -74 -133
+-74 -56 0 -56 0 -133 74 l-77 75 0 60 c0 54 3 64 30 91 19 20 30 41 30 60 0
+53 19 60 150 60 l119 0 46 -45z"/>
+<path d="M19456 2084 c-14 -13 -16 -53 -16 -284 0 -295 1 -300 60 -300 56 0
+60 13 60 211 l0 180 48 44 47 45 87 0 c97 0 118 -11 118 -60 0 -19 11 -40 30
+-60 30 -31 30 -31 30 -147 0 -115 0 -116 -31 -151 -30 -34 -30 -35 -12 -53 15
+-15 27 -17 81 -10 37 4 67 14 73 22 5 8 9 94 9 191 l0 177 -30 31 c-20 20 -30
+41 -30 60 0 22 -12 42 -45 75 l-46 45 -89 0 c-85 0 -91 -1 -123 -30 -20 -17
+-46 -30 -60 -30 -16 0 -39 12 -57 30 -34 34 -79 40 -104 14z"/>
+<path d="M20280 2070 c-20 -19 -41 -30 -60 -30 -45 0 -60 -23 -60 -91 l0 -59
+75 -75 75 -75 60 0 c55 0 63 -3 100 -36 22 -20 40 -45 40 -54 0 -10 -20 -35
+-44 -54 -37 -31 -50 -36 -96 -36 -44 0 -58 5 -87 30 -57 50 -123 34 -123 -30
+0 -56 14 -60 210 -60 195 0 210 4 210 58 0 16 12 39 32 59 l32 33 -32 33 c-20
+20 -32 43 -32 59 0 35 -24 58 -60 58 -19 0 -40 11 -60 30 -27 26 -38 30 -90
+30 -67 0 -90 15 -90 60 0 52 19 60 150 60 131 0 150 8 150 60 0 53 -19 60
+-150 60 -119 0 -119 0 -150 -30z"/>
+</g>
+</svg></div><p style="margin:0;font-size:13px">Source: Meta Ads Manager. Costs in Pakistani rupees (Rs). Totals include campaigns marked Off, which have completed their run. Impressions for FDM and Rang e Zar are estimated as reach × frequency.</p></div>
+<div><h4>Explore</h4><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="#summary">Summary</a></li><li><a href="#guide">Guide</a></li><li><a href="#highlights">Highlights</a></li><li><a href="#campaigns">Campaigns</a></li></ul></div>
+<div><h4>Contact</h4><ul style="list-style:none;padding:0;margin:0;display:grid;gap:10px"><li><a href="https://magestixsolutions.com" target="_blank" rel="noopener">magestixsolutions.com</a></li><li><a href="mailto:info@magestixsolutions.com">info@magestixsolutions.com</a></li><li><a href="https://wa.me/923040028325" target="_blank" rel="noopener">WhatsApp: +92 304 0028325</a></li></ul></div>
+</div>
+<div class="wrap fbot"><span>Meta Ads results by Magestix Solutions.</span><span>&copy; 2026 Magestix Solutions Pvt. Ltd.</span></div>
+</footer>
+
+<script>
+
+var G={Awareness:"linear-gradient(90deg,#e11d2b,#ff8a80)",Engagement:"linear-gradient(90deg,#b91c1c,#e11d2b)",Messaging:"linear-gradient(90deg,#f5f5f6,#8f8f9a)",Traffic:"linear-gradient(90deg,#f59e0b,#e11d2b)"};
+var X={Awareness:"<b>What this means:</b> The brand was shown to this many different new people. It builds recognition before people are ready to buy.",Engagement:"<b>What this means:</b> Each result is a new like or follower who will see the brand’s future posts for free.",Messaging:"<b>What this means:</b> Each result is an interested customer who contacted the brand directly on WhatsApp or Messenger.",Traffic:"<b>What this means:</b> Each result is a person who visited the profile or WhatsApp channel."};
+var f=function(n){return n.toLocaleString("en-US")};
+// client,name,type,result,label,cost,costLabel,spend,impr,reach,freq,live
+var D=[
+["MMK","MMK Like/Followers Campaign","Engagement",130015,"Followers & likes","2.35","per follow/like",305248,1760982,0,0,1],
+["Microlinks","WhatsApp Channel Campaign","Traffic",41922,"Profile & page visits","1.81","per visit",75691,435644,0,0,1],
+["FDM","FDM Awareness Campaign","Awareness",564584,"People reached","17.41","per 1,000 people",0,2555371*0+779126,564584,"1.38"],
+["ATSC","ATSC Awareness Campaign","Awareness",557357,"People reached","13.62","per 1,000 people",7591,675026],
+["MMK","MMK Awareness","Awareness",365460,"People reached","9.88","per 1,000 people",3612,370159],
+["Rang e Zar","Rang e Zar Awareness Campaign","Awareness",262515,"People reached","8.29","per 1,000 people",0,309768,262515,"1.18"],
+["Microlinks","Microlinks Awareness","Awareness",170319,"People reached","11.18","per 1,000 people",1904,188623],
+["Aryan’s","Aryan’s Awareness","Awareness",130535,"People reached","18.01","per 1,000 people",2351,139908],
+["FDM","Like & Follower FDM Campaign","Engagement",3943,"Followers & likes","3.74","per follow/like",0,133706,81528,"1.64"],
+["Rang e Zar","Rang e Zar Like/Follower Campaign","Engagement",1389,"Followers & likes","1.60","per follow/like",0,32235,23878,"1.35"],
+["Aryan’s","Aryan’s Engagement (New)","Engagement",658,"Followers & likes","4.79","per follow/like",3152,15204],
+["Aryan’s","Aryan’s Engagement Video","Engagement",345,"Followers & likes","6.60","per follow/like",2276,9160],
+["MMK","MMK Engagement","Engagement",717,"Followers & likes","9.24","per follow/like",6622,25733],
+["Microlinks","Microlinks Engagement","Engagement",422,"Followers & likes","11.42","per follow/like",4820,18400],
+["MMK","MMK Account Opening","Messaging",3614,"Conversations","77.78","per conversation",281105,1479735],
+["FDM","FDM Engagement Campaign","Messaging",2542,"Conversations","93.72","per conversation",0,1192488,418417,"2.85"],
+["PMEX","PMEX Campaign","Messaging",1643,"Conversations","50.30","per conversation",82646,451882],
+["PMEX","PMEX Account Opening","Messaging",1200,"Conversations","57.64","per conversation",69169,300045],
+["Microlinks","AI Account Opening","Messaging",1035,"Conversations","67.54","per conversation",69907,251635],
+["MMK","MMK Engagement Campaign","Messaging",1007,"Conversations","45.21","per conversation",45526,187203],
+["PMEX","PMEX Account Opening (New)","Messaging",472,"Conversations","44.00","per conversation",20767,73191,0,0,1],
+["Microlinks","Charges Free Trading 2","Messaging",694,"Conversations","68.55","per conversation",47573,209186,0,0,1],
+["FDM","FDM Engagement Campaign (2)","Messaging",447,"Conversations","41.67","per conversation",0,62082,50066,"1.24"],
+["Rang e Zar","Rang e Zar Sales","Messaging",135,"Conversations","17.55","per conversation",0,45098,39216,"1.15"]
+];
+D=D.sort(function(a,b){return (b[11]?1:0)-(a[11]?1:0)});
+function bars(id,rows,pre,g,max){var m=max||Math.max.apply(null,rows.map(function(r){return r[1]}));
+ document.getElementById(id).innerHTML=rows.map(function(r){return '<div class="br" style="--g:'+g+'"><i>'+r[0]+'</i><div class="tr"><u style="width:'+Math.max(4,r[1]/m*100)+'%"></u></div><b>'+pre+(r[1]<100?r[1].toFixed(2):f(r[1]))+'</b></div>'}).join("")}
+bars("c1",[["FDM Awareness",564584],["ATSC Awareness",557357],["MMK Awareness",365460],["Rang e Zar Awareness",262515],["Microlinks Awareness",170319],["Aryan’s Awareness",130535]],"",G.Awareness);
+bars("c2",[["MMK Account Opening",3614],["FDM Engagement",2542],["PMEX Campaign",1643],["PMEX Account Opening",1200],["AI Account Opening",1035],["MMK Engagement",1007],["Charges Free Trading 2",694]],"",G.Messaging);
+bars("c3",[["Rang e Zar Like/Follower",1.6],["MMK Like/Followers",2.35],["FDM Like & Follower",3.74],["Aryan’s Engagement",4.79],["Aryan’s Video",6.6],["MMK Engagement",9.24],["Microlinks Engagement",11.42]],"Rs ",G.Engagement,12);
+bars("c4",[["Rang e Zar Awareness",8.29],["MMK Awareness",9.88],["Microlinks Awareness",11.18],["ATSC Awareness",13.62],["FDM Awareness",17.41],["Aryan’s Awareness",18.01]],"Rs ",G.Awareness,20);
+var AV={},CN={},MN={};D.forEach(function(d){var c=parseFloat(d[5]);AV[d[6]]=(AV[d[6]]||0)+c;CN[d[6]]=(CN[d[6]]||0)+1;MN[d[6]]=Math.min(MN[d[6]]||1e9,c)});
+function P(d){var n=CN[d[6]];if(n<2)return"";var a=AV[d[6]]/n,c=parseFloat(d[5]),p=Math.round((1-c/a)*100),s=c==MN[d[6]]?'<span class="pl g">★ Best value in its category</span>':'';s+=p>=15?'<span class="pl g">'+p+'% cheaper than average</span>':p<=-15?'<span class="pl y">'+(-p)+'% above average</span>':'<span class="pl">Close to average</span>';return '<div class="pls">'+s+'</div>'}
+var CS={},KM={Awareness:"R",Engagement:"E",Messaging:"M",Traffic:"T"};D.forEach(function(d){var c=CS[d[0]]=CS[d[0]]||{n:0,s:0,R:0,E:0,M:0,T:0};c.n++;c.s+=d[7]||0;c[KM[d[2]]]+=d[3]});
+document.getElementById("cl").innerHTML=Object.keys(CS).map(function(k){var c=CS[k];return '<div><b>'+k+'</b><div class="lb">'+c.n+' featured campaign'+(c.n>1?'s':'')+'</div>'+[["R","People reached"],["E","Followers & likes"],["M","Conversations"],["T","Visits"]].filter(function(x){return c[x[0]]>0}).map(function(x){return '<div class="r"><span>'+x[1]+'</span><b>'+f(c[x[0]])+'</b></div>'}).join("")+'</div>'}).join("");
+var T=["All","Live","Awareness","Engagement","Messaging","Traffic"],cur="All";
+function draw(){
+ document.getElementById("t").innerHTML=T.map(function(x){return '<button class="'+(x==cur?'on':'')+'" onclick="cur=\''+x+'\';draw()">'+(x=="Messaging"?"Leads & Messaging":x=="Live"?"● Live now":x)+'</button>'}).join("");
+ document.getElementById("g").innerHTML=D.filter(function(d){return cur=="All"||(cur=="Live"?d[11]:d[2]==cur)}).map(function(d){
+  return '<div class="c'+(d[11]?' lv':'')+'" style="--g:'+G[d[2]]+'"><div class="k">'+d[0]+' · '+d[2]+(d[11]?'<span class="live">● LIVE</span>':'')+'</div><h3>'+d[1]+'</h3><div class="big">'+f(d[3])+'</div><div class="lb">'+d[4]+'</div>'+P(d)+'<div class="r"><span>Cost '+d[6]+'</span><b>Rs '+d[5]+'</b></div>'+(d[8]?'<div class="r"><span>Impressions</span><b>'+f(d[8])+'</b></div>':'')+(d[9]?'<div class="r"><span>Reach</span><b>'+f(d[9])+'</b></div>':'')+(d[10]?'<div class="r"><span>Frequency</span><b>'+d[10]+'x</b></div>':'')+'<div class="ex">'+X[d[2]]+'</div></div>'}).join("")}
+draw();
+
+// counter animation for hero + stat strip
+(function(){var el=document.getElementById("heroN");var n=41,s=performance.now();function f(t){var p=Math.min((t-s)/1200,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)})();
+// scroll progress bar
+addEventListener("scroll",function(){document.body.style.setProperty("--p",(scrollY/Math.max(1,document.body.scrollHeight-innerHeight)*100)+"%")},{passive:true});
+</script>
+
+<script>
+/* Animate every key figure: counts up from 0 when it scrolls into view,
+   and again whenever campaign cards are re-rendered by a filter. */
+(function(){
+ var SEL=".st b,.big,.r b,.fl b,.br b,.hl b";
+ var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+ function parse(t){
+   var m=/^([^\d]*)(\d[\d,]*(?:\.\d+)?)(.*)$/.exec(t.trim());
+   if(!m) return null;
+   var num=m[2], dec=(num.split(".")[1]||"").length;
+   return {pre:m[1], suf:m[3], to:parseFloat(num.replace(/,/g,"")), dec:dec, comma:num.indexOf(",")>-1, orig:t};
+ }
+ function fmt(v,o){
+   var s=o.comma? v.toLocaleString("en-US",{minimumFractionDigits:o.dec,maximumFractionDigits:o.dec})
+                : v.toFixed(o.dec);
+   return o.pre+s+o.suf;
+ }
+ function run(el,o){
+   if(reduce){el.textContent=o.orig;return}
+   var t0=null, dur=1400;
+   function step(ts){
+     if(t0===null) t0=ts;
+     var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,3);
+     el.textContent=fmt(o.to*e,o);
+     if(p<1) requestAnimationFrame(step); else el.textContent=o.orig;
+   }
+   requestAnimationFrame(step);
+ }
+ var io=new IntersectionObserver(function(entries){
+   entries.forEach(function(en){
+     if(!en.isIntersecting) return;
+     var el=en.target, o=el._fig;
+     io.unobserve(el);
+     if(o) run(el,o);
+   });
+ },{threshold:.5});
+ function arm(root){
+   (root||document).querySelectorAll(SEL).forEach(function(el){
+     if(el.id==="heroN"||el._fig) return;
+     var o=parse(el.textContent);
+     if(!o) return;
+     el._fig=o;
+     el.textContent=fmt(0,o);   // start at zero, animate on view
+     io.observe(el);
+   });
+ }
+ arm();
+ // re-arm after each filter re-render (draw is a global function)
+ if(typeof window.draw==="function"){
+   var _draw=window.draw;
+   window.draw=function(){ _draw.apply(this,arguments); arm(document.getElementById("g")); };
+ }
+})();
+</script>
+</body></html>
